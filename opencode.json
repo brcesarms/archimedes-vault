@@ -1,0 +1,144 @@
+{
+  "$schema": "https://opencode.ai/config.schema.json",
+  "version": "v1.2.0 (2026-09-08)",
+  "project": "archimedes-vault",
+  "description": "Sistema Archimedes — Automação e organização do Archimedes Vault",
+  "author": "Bruno César Medeiros Siqueira",
+  "email": "brcesarms@github.com",
+  "model": "ollama/qwen3-coder:30b",
+  "skills": {
+    "paths": [
+      "./.opencode/skills"
+    ],
+    "auto-reload": true
+  },
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:11434/v1",
+        "timeout": 480000,
+        "keepAlive": "5m"
+      },
+      "models": {
+        "qwen3-coder:30b": {
+          "name": "Qwen3 Coder 30B MoE (64k Context) - OFICIAL",
+          "priority": 1,
+          "context": 65536,
+          "options": {
+            "num_ctx": 32768,
+            "num_thread": 8
+          }
+        },
+        "gemma4:26b": {
+          "name": "Gemma4 26B MoE A4B (32k Context) - leve/multimodal",
+          "priority": 2,
+          "context": 32768,
+          "options": {
+            "num_ctx": 32768
+          }
+        }
+      }
+    }
+  },
+  "agent": {
+    "build": {
+      "description": "Assistente de automação e organização do Archimedes (archimedes-vault)",
+      "mode": "primary",
+      "prompt": "{file:./AGENTS.md}",
+      "context_window": 32768,
+      "permission": {
+        "read": "allow",
+        "edit": "ask",
+        "bash": {
+          "*": "ask",
+          "ssh *": "ask",
+          "scp *": "ask",
+          "rsync *": "ask",
+          "ssh laptop-brn *": "allow",
+          "scp * laptop-brn:*": "allow",
+          "scp * bruno@10.0.0.5:*": "allow",
+          "rsync * laptop-brn:*": "allow",
+          "ssh geekom *": "allow",
+          "cat *": "allow",
+          "ls *": "allow",
+          "mkdir *": "ask",
+          "bash -n *": "allow",
+          "chmod *": "allow",
+          "pwd": "allow",
+          "find * -maxdepth *": "allow",
+          "grep *": "allow",
+          "diff *": "allow",
+          "wc *": "allow",
+          "stat *": "allow",
+          "head *": "allow",
+          "tail *": "allow",
+          "cmp *": "allow",
+          "sha256sum *": "allow",
+          "md5sum *": "allow",
+          "du *": "allow",
+          "tar *": "ask",
+          "rm *": "ask",
+          "*backup-cofre.sh*": "allow"
+        },
+        "task": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "skill": "allow"
+      }
+    },
+    "estudante": {
+      "description": "Especialista em estudos para concursos. Cria resumos, flashcards e questões de revisão a partir das notas do cofre. Use para 'resumir matéria', 'criar flashcards', 'questões de revisão', 'preparar prova'. Foco em língua portuguesa, informática, legislação, saúde pública e administração.",
+      "mode": "subagent",
+      "temperature": 0.4,
+      "context_window": 16384,
+      "max_tokens": 4096
+    },
+    "resumidor": {
+      "description": "Especialista em transformar conteúdo longo em notas atômicas resumidas. Lê textos extensos e gera notas concisas no estilo do cofre. Use para 'resumir essa nota', 'transformar em nota atômica', 'encurtar', 'resumir artigo'. Nunca altera o original.",
+      "mode": "subagent",
+      "temperature": 0.3,
+      "context_window": 16384,
+      "max_tokens": 4096
+    },
+    "auditor": {
+      "description": "Especialista em auditoria e validação do cofre Archimedes. Realiza checks de saúde, links quebrados, notas órfãs, segurança e performance. Use para 'auditar cofre', 'verificar saúde', 'detectar problemas', 'validar estrutura'.",
+      "mode": "subagent",
+      "temperature": 0.2,
+      "context_window": 16384,
+      "max_tokens": 2048
+    }
+  },
+  "profiles": {
+    "geekom": {
+      "description": "GEEKOM A7 MAX (Ryzen 9 7940HS / 64GB RAM) — IA Local (Ollama + OpenCode)",
+      "model": "ollama/qwen3-coder:30b",
+      "memory_limit": "50g",
+      "cpu_threads": 8
+    },
+    "acer-paula": {
+      "description": "ACER Aspire A514-54 (i3-1115G4 / 12GB RAM + 22GB Swap) — Portátil (Linux)",
+      "model": "ollama/qwen3-coder:30b",
+      "memory_limit": "10g",
+      "cpu_threads": 4
+    },
+    "alienware": {
+      "description": "Alienware Aurora 16\" (Core 7 240H / RTX 5060 / 32GB RAM) — Notebook de Dev (Ollama local qwen3:30b)",
+      "model": "ollama/qwen3:30b",
+      "memory_limit": "28g",
+      "cpu_threads": 16,
+      "gpu": "rtx5060"
+    }
+  },
+  "options": {
+    "verbose": false,
+    "color": true,
+    "log_level": "info",
+    "max_retries": 3,
+    "retry_delay": 1000
+  }
+}

@@ -1,0 +1,6 @@
+[submodule "t.i"]
+	path = t.i
+	url = git@github.com:brcesarms/t.i.git
+[submodule "concurseiro"]
+	path = concurseiro
+	url = git@github.com:brcesarms/concurseiro.git

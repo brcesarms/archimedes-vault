@@ -1,0 +1,43 @@
+# 🧹 Artefatos que NÃO devem ir para o git
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Segredos — NUNCA commitar
+.env
+.env.*
+!.env.template
+*.key
+*.pem
+*.p12
+id_rsa
+id_ed25519
+credentials.json
+token.json
+
+# SO / editores
+.DS_Store
+Thumbs.db
+.obsidian/workspace*
+.obsidian/cache
+*.tmp
+*.swp
+
+# Backups locais
+*.bak-*
+*.bak
+*~
+_utils/backups/
+
+# Backups do cofre (tar.gz inflam o repo)
+utils/backups/
+*.tar.gz
+
+# Logs de execução do Executor (runtime, não versionar)
+guia-ia-local/cerebrum/logs/*
+!guia-ia-local/cerebrum/logs/.gitkeep

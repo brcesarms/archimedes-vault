@@ -1,0 +1,7 @@
+[Unit]
+Description=Backup semanal do Archimedes Vault (snapshot + push GitHub)
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/archimedes-vault/guia-ia-local/scripts/linux/backup-semanal-executor.sh

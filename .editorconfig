@@ -1,0 +1,48 @@
+# ============================================================
+# 🔧 EditorConfig do J.A.R.V.I.S.
+# ============================================================
+# Configuração padrão de formatação para todos os editores.
+# Compatível com: VS Code, Vim, Neovim, Sublime, JetBrains
+# ============================================================
+
+# 🌐 Configuração padrão
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# 📝 Markdown (Obsidian)
+[*.md]
+indent_size = 2
+trim_trailing_whitespace = false
+
+# 🐚 Shell Scripts
+[*.sh]
+indent_size = 4
+end_of_line = lf
+
+# 🐍 Python
+[*.py]
+indent_size = 4
+max_line_length = 120
+
+# 📄 YAML (frontmatter)
+[*.{yml,yaml}]
+indent_size = 2
+
+# 🌐 JSON
+[*.{json,jsonc}]
+indent_size = 2
+
+# 🐳 Docker
+[Dockerfile*]
+indent_size = 4
+
+# 📦 Makefile
+[Makefile]
+indent_style = tab

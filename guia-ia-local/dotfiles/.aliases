@@ -1,0 +1,73 @@
+#!/bin/bash
+# ============================================================
+# 🏛️ Aliases do Archimedes - Atalhos do Terminal
+# ============================================================
+# Este arquivo é carregado automaticamente pelo .bashrc do cofre.
+# Copie para ~/.bashrc ou source manualmente.
+# ============================================================
+
+# 🏛️ Cofre
+alias cofre='cd ~/archimedes-vault'
+alias cofre-status='cat ~/archimedes-vault/guia-ia-local/DEPENDENCIAS.md'
+
+# 🦙 Ollama - Comandos úteis
+alias ollama-list='ollama list'
+alias ollama-ps='ollama ps'
+alias ollama-stop='ollama stop'
+alias ollama-pull='ollama pull'
+alias ollama-rm='ollama rm'
+
+# 🤖 OpenCode
+alias oc='opencode'
+alias oc-up='opencode update'
+
+# 🐳 Docker
+alias dps='docker ps'
+alias dpsa='docker ps -a'
+alias dex='docker exec -it'
+alias dlogs='docker logs -f'
+alias dprune='docker system prune -af'
+
+# 📁 Navegação rápida
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias ll='ls -lah'
+alias la='ls -A'
+alias l='ls -CF'
+alias tree='tree -C --dirsfirst'
+
+# 🐧 Comandos úteis Linux
+alias ports='ss -tulnp'
+alias myip='curl -s ifconfig.me'
+alias localip='hostname -I | awk "{print \$1}"'
+alias dfh='df -h'
+alias duh='du -sh *'
+alias freeh='free -h'
+alias topcpu='ps aux --sort=-%cpu | head -10'
+alias topmem='ps aux --sort=-%mem | head -10'
+
+# 🔒 Segurança
+alias please='sudo'
+alias fuck='sudo $(history -1 | awk "{print \$2}")'
+
+# 📝 Edição rápida
+alias vimrc='vim ~/.vimrc'
+alias bashrc='vim ~/.bashrc'
+alias reload='source ~/.bashrc && echo "✅ Bashrc recarregado!"'
+
+# 🏛️ Git no cofre
+alias git-cofre='cd ~/archimedes-vault && git'
+alias git-status='git status'
+alias git-pull='git pull'
+alias git-push='git push'
+
+# 🔍 Busca
+alias grep='grep --color=auto'
+alias find-md='find . -name "*.md"'
+alias find-skill='find ~/.opencode/skills -name "SKILL.md"'
+
+# 🎨 Cores
+alias ip='ip -color=auto'
+alias diff='diff --color=auto'
+alias ls='ls --color=auto'
