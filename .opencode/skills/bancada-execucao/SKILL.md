@@ -9,8 +9,39 @@ metadata:
 
 # 🏗️ Execução do Projeto Bancada
 
-> **Objetivo:** padronizar a execução do fluxo de bancada (inventário técnico + backup robocopy + manifesto) via orquestrador Python em `~/projetos/projeto-bancada/`.
-> **Testado em:** 2026-09-11 — estrutura implementada e testes internos (parse JSON + manifesto) ✅
+> **Objetivo:** padronizar a execução do fluxo de bancada (inventário técnico + backup robocopy + manifesto + pós-instalação) via orquestrador Python em `~/projetos/projeto-bancada/`.
+> **Testado em:** 2026-09-11 — estrutura implementada e testes internos (parse JSON + manifesto + menu interativo) ✅
+
+## 🖥️ Tela Inicial Padrão (OBRIGATÓRIA)
+
+Sempre que o usuário acionar o Projeto Bancada (dizendo "projeto bancada", "bancada", "abrir bancada", etc.), apresente **IMEDIATAMENTE** este painel antes de qualquer outra ação:
+
+```text
+==================================================================
+🏛️ PROJETO BANCADA — PAINEL DE OPERAÇÕES
+==================================================================
+
+Etapas disponíveis:
+
+  [1] 📊 Inventário Técnico
+      └── Mapeia perfis em C:\Users, softwares instalados e extrai a chave OEM da BIOS.
+
+  [2] 💾 Backup Forense (Robocopy)
+      └── Copia Desktop, Documentos, Downloads e Fotos para o storage central (com suporte a OneDrive).
+
+  [3] 📋 Manifesto Markdown
+      └── Gera o checklist para o Obsidian com status de cópia e lista de apps a reinstalar.
+
+  [4] 🪟 Pós-Instalação Completo
+      └── Aplica ajustes de energia/privacidade e instala 10 apps essenciais + 19 runtimes via winget.
+
+  [5] 🧹 Desbloat Windows 11 (Opcional pós-formatação)
+      └── Remove bloatware, telemetria e widgets usando o Win11Debloat com ponto de restauração.
+
+==================================================================
+```
+
+Após renderizar o painel, pergunte ao usuário quais etapas deseja executar e confirme os parâmetros necessários.
 
 ## 📍 Localização do Projeto
 
