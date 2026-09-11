@@ -38,7 +38,7 @@ fi
 # ── Validação de campos obrigatórios ───────────────────────────
 log ""
 log "⏳ [2/5] Verificando campos obrigatórios..."
-REQUIRED_FIELDS=("model" "skills" "provider" "agent")
+REQUIRED_FIELDS=("skills" "agent")
 
 MISSING_FIELDS=0
 for field in "${REQUIRED_FIELDS[@]}"; do
@@ -50,19 +50,22 @@ for field in "${REQUIRED_FIELDS[@]}"; do
     fi
 done
 
-# ── Validação de modelos ───────────────────────────────────────
+# ── Validação de modelo e provedores (Agnóstico) ───────────────
 log ""
-log "⏳ [3/5] Validação de modelos Ollama..."
-MODEL_COUNT=$(python3 -c "import json; data=json.load(open('$OPENCODE_JSON')); print(len(data.get('provider',{}).get('ollama',{}).get('models',{})))" 2>/dev/null)
-if [ "$MODEL_COUNT" -gt 0 ]; then
-    log "✅ Modelos encontrados: $MODEL_COUNT"
-else
-    log "⚠️  Nenhum modelo encontrado"
-fi
+log "⏳ [3/5] Validação de modelo e provedores..."
+python3 -c "
+import json
+data = json.load(open('$OPENCODE_JSON'))
+model = data.get('model')
+if model:
+    print(f'   - Modelo padrão: {model}')
+else:
+    print('   - 🔓 Arquitetura agnóstica: modelo livre (selecionado via TUI/CLI)')
+"
 
 # ── Validação de perfis por máquina ────────────────────────────
 log ""
-log "⏳ [4/5] Validação de perfis por máquina..."
+log "⏳ [4/5] Validação de perfis..."
 PERFIS_COUNT=$(python3 -c "import json; data=json.load(open('$OPENCODE_JSON')); print(len(data.get('profiles',{})))" 2>/dev/null)
 if [ "$PERFIS_COUNT" -gt 0 ]; then
     log "✅ Perfis encontrados: $PERFIS_COUNT"
@@ -72,7 +75,7 @@ data = json.load(open('$OPENCODE_JSON'))
 for name, config in data.get('profiles', {}).items():
     print(f'   - {name}: {config.get(\"description\", \"N/A\")}')"
 else
-    log "ℹ️  Nenhum perfil configurado"
+    log "ℹ️  Perfis desacoplados (configuração portátil)"
 fi
 
 # ── Validação de agentes ───────────────────────────────────────

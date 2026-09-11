@@ -1,7 +1,6 @@
 ---
 description: Executor mecânico do sistema Cérebro & Executor. Executa os Runbooks de guia-ia-local/cerebrum/rotinas/ (backup, limpeza, saúde, auditoria, monitoramento) de forma headless e obediente. Use quando for rodar rotinas de manutenção do cofre.
 mode: primary
-model: ollama/gemma4:26b
 temperature: 0
 permission:
   read: allow

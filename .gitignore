@@ -41,3 +41,6 @@ utils/backups/
 # Logs de execução do Executor (runtime, não versionar)
 guia-ia-local/cerebrum/logs/*
 !guia-ia-local/cerebrum/logs/.gitkeep
+
+# Estado gerado pela CLI OpenCode (cache/links locais)
+.agents/
