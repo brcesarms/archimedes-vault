@@ -173,6 +173,7 @@ archimedes-vault/                   <-- Raiz do seu repositório / cofre princip
 │   ├── perfis/                     <-- Perfis de hardware (alienware, geekom, acer-paula)
 │   └── scripts/                    <-- Scripts operacionais de infraestrutura
 │       ├── linux/                  <-- Scripts bash e suite de validação em validacoes/
+│       ├── python/                 <-- Scripts Python p/ parsing pesado e orquestração (pytest em tests/)
 │       └── windows/                <-- Scripts PowerShell
 ├── concurseiro/                    <-- 📚 ESTUDOS: Suas notas pessoais de estudo para concursos
 ├── t.i/                            <-- 📚 ESTUDOS: Suas notas pessoais de T.I. e certificações
@@ -188,7 +189,7 @@ archimedes-vault/                   <-- Raiz do seu repositório / cofre princip
 
 ### 🛠️ Skills do Projeto
 
-* 🗒️ `notas-atomicas` · 🏥 `auditar-cofre` · 🐧 `script-linux` · 🩺 `revisar-scripts` · 🗺️ `criar-moc` · 🔄 `backup-cofre` · 🗂️ `organizar-cofre` · 🔗 `gerenciar-links` · 🧼 `auditar-skills` · 🔌 `atualizar-ssh` · 🤖 `orquestrar-tarefa` · 🔍 `validar-links-md` · 📋 `validar-prompt-executor` · 🔒 `validar-scripts-cofre` · 🕸️ `validar-teia` · 🏗️ `bancada-execucao`
+* 🗒️ `notas-atomicas` · 🏥 `auditar-cofre` · 🐧 `script-linux` · 🩺 `revisar-scripts` · 🗺️ `criar-moc` · 🔄 `backup-cofre` · 🗂️ `organizar-cofre` · 🔗 `gerenciar-links` · 🧼 `auditar-skills` · 🔌 `atualizar-ssh` · 🤖 `orquestrar-tarefa` · 🔍 `validar-links-md` · 📋 `validar-prompt-executor` · 🔒 `validar-scripts-cofre` · 🕸️ `validar-teia` · 🏗️ `bancada-execucao` · ⚡ `motor-remoto`
 * **Como criar skill nova:** Salvar em `.opencode/skills/<nome-da-skill>/SKILL.md` contendo frontmatter `name` e `description`.
 
 ---

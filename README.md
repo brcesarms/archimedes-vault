@@ -66,6 +66,7 @@ archimedes-vault/                   <-- Raiz do seu repositório / cofre princip
 │   ├── perfis/                     <-- Perfis de hardware (alienware, geekom, acer-paula)
 │   └── scripts/                    <-- Scripts operacionais de infraestrutura
 │       ├── linux/                  <-- Scripts bash e suite de validação em validacoes/
+│       ├── python/                 <-- Scripts Python p/ parsing pesado e orquestração (pytest em tests/)
 │       └── windows/                <-- Scripts PowerShell
 ├── concurseiro/                    <-- 📚 ESTUDOS: Suas notas pessoais de estudo para concursos
 ├── t.i/                            <-- 📚 ESTUDOS: Suas notas pessoais de T.I. e certificações

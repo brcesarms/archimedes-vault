@@ -123,6 +123,7 @@ As skills ficam **dentro do cofre** em `.opencode/skills/`, registradas no `open
 | 🔄 `backup-cofre` | Backup e restauração segura do cofre |
 | 🐧 `script-linux` | Cria scripts bash seguindo as convenções do cofre |
 | 🔌 `atualizar-ssh` | Atualiza arquivos em máquinas remotas via SSH/SCP com verificação de integridade |
+| ⚡ `motor-remoto` | Reusa o motor Python do projeto-bancada p/ operações remotas (sem duplicar) |
 
 ### ➕ Criar uma nova skill
 
