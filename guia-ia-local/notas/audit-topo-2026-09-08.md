@@ -158,11 +158,11 @@ archimedes-vault/
 
 ## 🔗 Fontes
 
-- 📖 [`AGENTS.md`](../AGENTS.md)
-- 📖 [`guia-ia-local/README.md`](./guia-ia-local/README.md)
-- 📖 [`master-plan.md`](./guia-ia-local/cerebrum/master-plan.md)
-- 📖 [`estrutura-cofre.md`](./guia-ia-local/cerebrum/estrutura-cofre.md)
-- 📖 [`convencoes-git.md`](../.opencode/convencoes/convencoes-git.md)
+- 📖 [`AGENTS.md`](../../AGENTS.md)
+- 📖 [`guia-ia-local/README.md`](../README.md)
+- 📖 [`master-plan.md`](../cerebrum/master-plan.md)
+- 📖 [`estrutura-cofre.md`](../cerebrum/estrutura-cofre.md)
+- 📖 [`convencoes-git.md`](../../.opencode/convencoes/convencoes-git.md)
 
 ---
 

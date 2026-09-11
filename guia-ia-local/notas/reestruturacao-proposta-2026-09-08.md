@@ -315,10 +315,10 @@ done
 
 ## 🔗 Fontes
 
-- 📖 [`guia-ia-local/README.md`](./guia-ia-local/README.md)
-- 📖 [`master-plan.md`](./guia-ia-local/cerebrum/master-plan.md)
-- 📖 [`convencoes-git.md`](../.opencode/convencoes/convencoes-git.md)
-- 📖 [`convencoes-scripts.md`](../.opencode/convencoes/convencoes-scripts.md)
+- 📖 [`guia-ia-local/README.md`](../README.md)
+- 📖 [`master-plan.md`](../cerebrum/master-plan.md)
+- 📖 [`convencoes-git.md`](../../.opencode/convencoes/convencoes-git.md)
+- 📖 [`convencoes-scripts.md`](../../.opencode/convencoes/convencoes-scripts.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 - **Frequência:** 1x (migração em 2026-09-07) — vai se repetir a cada formatação
 - **Passos:** criar repos → `git init` nos submódulos → push → `git submodule add` → mover sistema para `guia-ia-local/` → commit raiz → push
-- **Skill/convenção:** ✅ [`convencoes-git.md`](../.opencode/convencoes/convencoes-git.md)
+- **Skill/convenção:** ✅ [`convencoes-git.md`](../../.opencode/convencoes/convencoes-git.md)
 - **Status:** ✅ Documentado
 
 ## 🧠 Padrão 2: Testes do modelo local com GitHub
@@ -14,14 +14,14 @@
 - **Frequência:** 1x (2026-09-07) — recomendado repetir a cada novo modelo
 - **5 testes:** git básico, submódulos, API GitHub, estrutura do cofre, segurança
 - **Resultado (gemma4:26b no GEEKOM):** ✅ 5/5 corretos
-- **Skill/convenção:** ✅ [`convencoes-git.md`](../.opencode/convencoes/convencoes-git.md)
+- **Skill/convenção:** ✅ [`convencoes-git.md`](../../.opencode/convencoes/convencoes-git.md)
 - **Status:** ✅ Documentado
 
 ## 🧠 Padrão 3: Token GitHub exposto em chat
 
 - **Frequência:** 1x (2026-09-07) — ⚠️ evitar a todo custo
 - **Lição:** nunca enviar token/senha no chat; usar variável de ambiente `GITHUB_TOKEN`
-- **Skill/convenção:** ✅ [`convencoes-git.md`](../.opencode/convencoes/convencoes-git.md) (seção Segurança)
+- **Skill/convenção:** ✅ [`convencoes-git.md`](../../.opencode/convencoes/convencoes-git.md) (seção Segurança)
 - **Status:** ✅ Documentado (revogação ficou a critério do Bruno)
 
 ## 📊 Resumo
@@ -97,5 +97,5 @@
 ---
 
 ## 🔗 Fontes
-- [Learning Loop — convenção](../.opencode/convencoes/learning-loop.md)
+- [Learning Loop — convenção](../../.opencode/convencoes/learning-loop.md)
 - [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)

@@ -14,5 +14,5 @@
 
 ## 🔗 Fontes
 
-- 📄 Estrutura padronizada: [`AGENTS.md`](../AGENTS.md)
-- 🏥 Skill de auditoria: [`auditar-cofre`](../.opencode/skills/auditar-cofre/SKILL.md)
+- 📄 Estrutura padronizada: [`AGENTS.md`](../../AGENTS.md)
+- 🏥 Skill de auditoria: [`auditar-cofre`](../../.opencode/skills/auditar-cofre/SKILL.md)

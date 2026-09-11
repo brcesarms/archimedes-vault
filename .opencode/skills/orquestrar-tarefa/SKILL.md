@@ -77,5 +77,5 @@ J.A.R.V.I.S.:
 
 ## 🔗 Fontes
 
-- [Contexto Eficiente — Regra 5](../../.opencode/convencoes/contexto-eficiente.md)
-- [Learning Loop](../../.opencode/convencoes/learning-loop.md)
+- [Contexto Eficiente — Regra 5](../../convencoes/contexto-eficiente.md)
+- [Learning Loop](../../convencoes/learning-loop.md)

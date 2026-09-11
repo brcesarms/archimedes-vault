@@ -109,3 +109,26 @@ def test_caminho_com_espaco(tmp_path):
     validos, quebrados = validar_links.validar_arquivo(str(origem), str(tmp_path))
     assert len(validos) == 1
     assert len(quebrados) == 0
+
+
+def test_ignora_node_modules(tmp_path):
+    (tmp_path / "node_modules" / "lib").mkdir(parents=True)
+    (tmp_path / "node_modules" / "lib" / "README.md").write_text("x", encoding="utf-8")
+    (tmp_path / "nota.md").write_text("ok", encoding="utf-8")
+    arquivos = validar_links.carregar_markdowns(str(tmp_path))
+    relativos = [os.path.relpath(a, str(tmp_path)) for a in arquivos]
+    assert not any(r.startswith("node_modules") for r in relativos)
+    assert "nota.md" in relativos
+
+
+def test_ignora_link_com_curinga(tmp_path):
+    origem = tmp_path / "origem.md"
+    origem.write_text("[exemplo](./.*\\.md) e [outro](../?/x.md)", encoding="utf-8")
+    validos, quebrados = validar_links.validar_arquivo(str(origem), str(tmp_path))
+    assert len(validos) == 0
+    assert len(quebrados) == 0
+
+
+def test_ignora_link_com_curinga_no_resolver(tmp_path):
+    assert validar_links.resolver_destino("./.*\\.md", str(tmp_path), str(tmp_path)) is None
+    assert validar_links.resolver_destino("../?/x.md", str(tmp_path), str(tmp_path)) is None

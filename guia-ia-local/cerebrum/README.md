@@ -206,11 +206,11 @@ opencode run --auto
 
 ## 🔗 Fontes
 
-- 📖 [`AGENTS.md`](../AGENTS.md) — Interface IA-para-IA
+- 📖 [`AGENTS.md`](../../AGENTS.md) — Interface IA-para-IA
 - 📖 [`master-plan.md`](./master-plan.md) — Roadmap completo
 - 📖 [`estrutura-cofre.md`](./estrutura-cofre.md) — Árvore de diretórios
 - 📖 [`template-runbook.md`](./template-runbook.md) — Template de Runbook
-- 📖 [`AGENTS.md`](../AGENTS.md) — Identidade do Archimedes
+- 📖 [`AGENTS.md`](../../AGENTS.md) — Identidade do Archimedes
 
 ---
 

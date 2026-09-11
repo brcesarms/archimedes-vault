@@ -95,7 +95,7 @@ echo 'export PATH="$HOME/.opencode/bin:$PATH"' >> "$HOME/.bashrc"
 - ✅ Roda `bash -n` + `shellcheck` em **todos** os `.sh` do cofre de uma vez
 - ✅ Detecta o shellcheck até em `~/.local/bin` (fallback sem sudo)
 - ✅ Exit code 0 = tudo limpo | 1 = há falhas para corrigir
-- ⚠️ Se o script de verificação **não existir**, crie-o seguindo [`script-linux`](./.opencode/skills/script-linux/SKILL.md) e a skill [`backup-cofre`](./.opencode/skills/backup-cofre/SKILL.md)
+- ⚠️ Se o script de verificação **não existir**, crie-o seguindo [`script-linux`](../script-linux/SKILL.md) e a skill [`backup-cofre`](../backup-cofre/SKILL.md)
 
 ## 📋 Checklist rápido pós-revisão
 
@@ -117,7 +117,7 @@ echo 'export PATH="$HOME/.opencode/bin:$PATH"' >> "$HOME/.bashrc"
 
 ## 🔗 Fontes
 
-- 🐚 Verificador automático: [`scripts/linux/verificar-scripts.sh`](../../guia-ia-local/scripts/linux/verificar-scripts.sh)
-- 📄 Convenções de scripts: [`script-linux`](../../.opencode/skills/script-linux/SKILL.md)
-- 📄 Convenções definidas em: [`AGENTS.md`](../../AGENTS.md)
+- 🐚 Verificador automático: [`scripts/linux/verificar-scripts.sh`](../../../guia-ia-local/scripts/linux/verificar-scripts.sh)
+- 📄 Convenções de scripts: [`script-linux`](../script-linux/SKILL.md)
+- 📄 Convenções definidas em: [`AGENTS.md`](../../../AGENTS.md)
 - 🐚 Documentação oficial: [ShellCheck](https://www.shellcheck.net/)

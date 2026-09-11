@@ -39,4 +39,4 @@ archimedes-vault/
 - ✅ **Consistência:** Toda a lógica do sistema em um local
 
 ## 🔗 Fontes
-- [AGENTS.md](../AGENTS.md)
+- [AGENTS.md](../../AGENTS.md)

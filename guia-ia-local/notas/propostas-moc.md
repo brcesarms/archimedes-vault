@@ -105,5 +105,5 @@ MOCs (Maps of Content) são notas de índice que organizam e conectam notas tem�
 
 ## 🔗 Fontes
 
-- [Skill: criar-moc](../.opencode/skills/criar-moc/SKILL.md)
+- [Skill: criar-moc](../../.opencode/skills/criar-moc/SKILL.md)
 - [Relatório de Auditoria](./vault-health-report.md)

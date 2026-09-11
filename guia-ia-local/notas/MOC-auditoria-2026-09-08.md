@@ -11,7 +11,7 @@
 | 🏗️ Topo | [`audit-topo-2026-09-08.md`](./audit-topo-2026-09-08.md) | Estrutura de pastas, submódulos, scripts | ✅ Sólida, com gaps |
 | 📚 Docs | [`audit-docs-2026-09-08.md`](./audit-docs-2026-09-08.md) | Cobertura, consistência, qualidade | ✅ Boa, com 4 docs críticos faltantes |
 | 🔒 Segurança | [`audit-security-2026-09-08.md`](./audit-security-2026-09-08.md) | Credenciais, permissões, logs | ✅ Enterprise-grade |
-| 🗺️ Reestruturação | [`reestruturação-proposta-2026-09-08.md`](./reestruturação-proposta-2026-09-08.md) | Roadmap 30 dias para 100% enterprise | ✅ Aprovação necessária |
+| 🗺️ Reestruturação | [`reestruturacao-proposta-2026-09-08.md`](./reestruturacao-proposta-2026-09-08.md) | Roadmap 30 dias para 100% enterprise | ✅ Aprovação necessária |
 
 ---
 
@@ -64,7 +64,7 @@
 | **Logs com rotação** | ❌ | ✅ | ❌ Não implementado |
 | **Perfis por máquina** | 0/3 | 3/3 | ❌ Não implementado |
 
-**Fonte:** [`reestruturação-proposta-2026-09-08.md`](./reestruturação-proposta-2026-09-08.md#tabela-de-métricas)
+**Fonte:** [`reestruturacao-proposta-2026-09-08.md`](./reestruturacao-proposta-2026-09-08.md#tabela-de-métricas)
 
 ---
 
@@ -99,7 +99,7 @@ archimedes-vault/
 │   │   ├── audit-topo-2026-09-08.md      # 🆕 (esta auditoria)
 │   │   ├── audit-docs-2026-09-08.md      # 🆕 (esta auditoria)
 │   │   ├── audit-security-2026-09-08.md  # 🆕 (esta auditoria)
-│   │   ├── reestruturação-proposta-2026-09-08.md  # 🆕 (esta auditoria)
+│   │   ├── reestruturacao-proposta-2026-09-08.md  # 🆕 (esta auditoria)
 │   │   └── vault-health-report.md        # ✅ (atual)
 │   └── benchmarks/                    # ⚠️ (não documentado, mas crítico)
 │   └── tests/                         # ⚠️ (não documentado, mas crítico)
@@ -140,13 +140,13 @@ archimedes-vault/
 
 ## 🔗 Fontes
 
-- 📖 [`AGENTS.md`](../AGENTS.md)
-- 📖 [`guia-ia-local/README.md`](./guia-ia-local/README.md)
-- 📖 [`master-plan.md`](./guia-ia-local/cerebrum/master-plan.md)
+- 📖 [`AGENTS.md`](../../AGENTS.md)
+- 📖 [`guia-ia-local/README.md`](../README.md)
+- 📖 [`master-plan.md`](../cerebrum/master-plan.md)
 - 📖 [`audit-topo-2026-09-08.md`](./audit-topo-2026-09-08.md)
 - 📖 [`audit-docs-2026-09-08.md`](./audit-docs-2026-09-08.md)
 - 📖 [`audit-security-2026-09-08.md`](./audit-security-2026-09-08.md)
-- 📖 [`reestruturação-proposta-2026-09-08.md`](./reestruturação-proposta-2026-09-08.md)
+- 📖 [`reestruturacao-proposta-2026-09-08.md`](./reestruturacao-proposta-2026-09-08.md)
 
 ---
 

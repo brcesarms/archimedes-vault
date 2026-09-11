@@ -32,10 +32,10 @@
 
 | Arquivo | Tamanho | Função |
 |---------|---------|--------|
-| [`DEPENDENCIAS.md`](./guia-ia-local/DEPENDENCIAS.md) | 3.9 KB | Lista completa de pacotes (curl, tar, git, ssh, rsync, Ollama, OpenCode) |
-| [`IA-RESTORE.md`](./guia-ia-local/IA-RESTORE.md) | 4.7 KB | Guia passo a passo para IA restaurar tudo em <10 min |
-| [`README-manual.md`](./guia-ia-local/README-manual.md) | 4.7 KB | Manual prático para humanos (comandos, troubleshoot, checklist) |
-| [`cerebrum/README.md`](./guia-ia-local/cerebrum/README.md) | 6.6 KB | Guia completo do sistema Cérebro ↔ Executor |
+| [`DEPENDENCIAS.md`](../DEPENDENCIAS.md) | 3.9 KB | Lista completa de pacotes (curl, tar, git, ssh, rsync, Ollama, OpenCode) |
+| [`IA-RESTORE.md`](../IA-RESTORE.md) | 4.7 KB | Guia passo a passo para IA restaurar tudo em <10 min |
+| [`README-manual.md`](../README-manual.md) | 4.7 KB | Manual prático para humanos (comandos, troubleshoot, checklist) |
+| [`cerebrum/README.md`](../cerebrum/README.md) | 6.6 KB | Guia completo do sistema Cérebro ↔ Executor |
 
 **Total:** 20 KB de documentação essencial.
 
@@ -45,10 +45,10 @@
 
 | Arquivo | Tamanho | Função |
 |---------|---------|--------|
-| [`alienware.md`](./guia-ia-local/perfis/alienware.md) | 4.2 KB | Configurações para Alienware Aurora 16" (i9 + RTX 4080) |
-| [`geekom.md`](./guia-ia-local/perfis/geekom.md) | 5.0 KB | Configurações para GEEKOM A7 MAX (IA Principal) |
-| [`acer-paula.md`](./guia-ia-local/perfis/acer-paula.md) | 2.6 KB | Configurações para ACER Aspire (Leve) |
-| [`PERFIS/README.md`](./guia-ia-local/perfis/README.md) | 3.0 KB | Guia de seleção de perfil por máquina |
+| [`alienware.md`](../perfis/alienware.md) | 4.2 KB | Configurações para Alienware Aurora 16" (i9 + RTX 4080) |
+| [`geekom.md`](../perfis/geekom.md) | 5.0 KB | Configurações para GEEKOM A7 MAX (IA Principal) |
+| [`acer-paula.md`](../perfis/acer-paula.md) | 2.6 KB | Configurações para ACER Aspire (Leve) |
+| [`PERFIS/README.md`](../perfis/README.md) | 3.0 KB | Guia de seleção de perfil por máquina |
 
 **Total:** 14.8 KB de configurações por máquina.
 
@@ -58,7 +58,7 @@
 
 | Arquivo | Tamanho | Função |
 |---------|---------|--------|
-| [`valida-cofre.sh`](./guia-ia-local/scripts/linux/validacoes/valida-cofre.sh) | 4.5 KB | Valida docs, perfis, scripts, runbooks, Ollama, OpenCode |
+| [`valida-cofre.sh`](../scripts/linux/validacoes/valida-cofre.sh) | 4.5 KB | Valida docs, perfis, scripts, runbooks, Ollama, OpenCode |
 
 **Total:** 4.5 KB de automação de validação.
 
@@ -68,7 +68,7 @@
 
 | Arquivo | Tamanho | Função |
 |---------|---------|--------|
-| [`logs-rotator.sh`](./guia-ia-local/scripts/linux/logs-rotator.sh) | 1.8 KB | Remove logs com mais de 14 dias |
+| [`logs-rotator.sh`](../scripts/linux/logs-rotator.sh) | 1.8 KB | Remove logs com mais de 14 dias |
 
 **Total:** 1.8 KB de automação de limpeza.
 
@@ -110,7 +110,7 @@
 - **Status:** Enterprise-grade, zero risco crítico
 - **Métricas:** 130 linhas
 
-### 4. 🗺️ `reestruturação-proposta-2026-09-08.md`
+### 4. 🗺️ `reestruturacao-proposta-2026-09-08.md`
 - **Objetivo:** Roadmap 30 dias para 100% enterprise
 - **Status:** Parcialmente implementado (S1 completado)
 - **Métricas:** 220 linhas
@@ -150,14 +150,14 @@
 
 ## 🔗 Fontes
 
-- 📖 [`AGENTS.md`](../AGENTS.md)
-- 📖 [`guia-ia-local/README.md`](./guia-ia-local/README.md)
-- 📖 [`master-plan.md`](./guia-ia-local/cerebrum/master-plan.md)
-- 📖 [`audit-topo-2026-09-08.md`](./guia-ia-local/notas/audit-topo-2026-09-08.md)
-- 📖 [`audit-docs-2026-09-08.md`](./guia-ia-local/notas/audit-docs-2026-09-08.md)
-- 📖 [`audit-security-2026-09-08.md`](./guia-ia-local/notas/audit-security-2026-09-08.md)
-- 📖 [`reestruturação-proposta-2026-09-08.md`](./guia-ia-local/notas/reestruturação-proposta-2026-09-08.md)
-- 📖 [`MOC-auditoria-2026-09-08.md`](./guia-ia-local/notas/MOC-auditoria-2026-09-08.md)
+- 📖 [`AGENTS.md`](../../AGENTS.md)
+- 📖 [`guia-ia-local/README.md`](../README.md)
+- 📖 [`master-plan.md`](../cerebrum/master-plan.md)
+- 📖 [`audit-topo-2026-09-08.md`](./audit-topo-2026-09-08.md)
+- 📖 [`audit-docs-2026-09-08.md`](./audit-docs-2026-09-08.md)
+- 📖 [`audit-security-2026-09-08.md`](./audit-security-2026-09-08.md)
+- 📖 [`reestruturacao-proposta-2026-09-08.md`](./reestruturacao-proposta-2026-09-08.md)
+- 📖 [`MOC-auditoria-2026-09-08.md`](./MOC-auditoria-2026-09-08.md)
 
 ---
 

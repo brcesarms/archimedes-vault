@@ -202,10 +202,10 @@ grep -r "rm -rf" guia-ia-local/scripts/ || echo "✅ Nenhum rm -rf encontrado"
 
 ## 🔗 Fontes
 
-- 📖 [`convencoes-git.md`](../.opencode/convencoes/convencoes-git.md)
-- 📖 [`AGENTS.md`](../AGENTS.md) — Seção 🔒 Dados Sensíveis
-- 📖 [`backup-cofre.sh`](./guia-ia-local/scripts/linux/backup-cofre.sh)
-- 📖 [`saude-sistema-executor.sh`](./guia-ia-local/scripts/linux/saude-sistema-executor.sh)
+- 📖 [`convencoes-git.md`](../../.opencode/convencoes/convencoes-git.md)
+- 📖 [`AGENTS.md`](../../AGENTS.md) — Seção 🔒 Dados Sensíveis
+- 📖 [`backup-cofre.sh`](../scripts/linux/backup-cofre.sh)
+- 📖 [`saude-sistema-executor.sh`](../scripts/linux/saude-sistema-executor.sh)
 
 ---
 

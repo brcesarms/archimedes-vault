@@ -28,6 +28,19 @@ FENCED_BLOCK_RE = re.compile(
 INLINE_CODE_RE = re.compile(r"`[^`]+`")
 DEFINICAO_LINK_RE = re.compile(r"^\s*\[[^\]]+\]:\s*\S+")
 
+# Diretórios que nunca devem ser varridos (dependências, caches, git)
+EXCLUIR_DIRS = {
+    "node_modules",
+    ".git",
+    ".venv",
+    "__pycache__",
+    ".pytest_cache",
+    "dist",
+    "build",
+    ".next",
+    ".cache",
+}
+
 
 def remover_blocos_codigo(conteudo: str) -> str:
     """Remove blocos de codigo fenced para nao validar links dentro deles."""
@@ -74,6 +87,8 @@ def resolver_destino(destino: str, arquivo_atual: str, raiz: str):
     destino_limpo = destino.split("#", 1)[0].strip()
     if not destino_limpo or eh_externo(destino_limpo):
         return None
+    if "*" in destino_limpo or "?" in destino_limpo:
+        return None  # curinga/placeholder — não é link navegável
     if destino_limpo.startswith("/"):
         # Absoluto do repo: resolve contra a raiz (lstrip evita que
         # os.path.join descarte a base em POSIX)
@@ -107,7 +122,8 @@ def carregar_markdowns(caminho: str):
     if os.path.isfile(caminho):
         return [caminho]
     arquivos = []
-    for raiz_atual, _dirs, arquivos_local in os.walk(caminho):
+    for raiz_atual, dirs, arquivos_local in os.walk(caminho):
+        dirs[:] = [d for d in dirs if d not in EXCLUIR_DIRS]
         for nome in arquivos_local:
             if nome.endswith((".md", ".mdx")):
                 arquivos.append(os.path.join(raiz_atual, nome))

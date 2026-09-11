@@ -50,6 +50,6 @@ O Archimedes usa **um único motor** para operações remotas: o orquestrador do
 ## 🔗 Fontes
 
 - [Projeto bancada no GitHub](https://github.com/brcesarms/projeto-bancada)
-- [Nota: Decisão de Arquitetura Python/PowerShell](./../../guia-ia-local/notas/decisao-arquitetura-python-powershell-2026-09-11.md)
-- [Nota: Arquitetura do Vault](./../../guia-ia-local/notas/arquitetura-vault.md)
-- [Nota: Proxmox GEEKOM — VM Windows](./../../guia-ia-local/notas/proxmox-geekom-vm-windows.md)
+- [Nota: Decisão de Arquitetura Python/PowerShell](../../../guia-ia-local/notas/decisao-arquitetura-python-powershell-2026-09-11.md)
+- [Nota: Arquitetura do Vault](../../../guia-ia-local/notas/arquitetura-vault.md)
+- [Nota: Proxmox GEEKOM — VM Windows](../../../guia-ia-local/notas/proxmox-geekom-vm-windows.md)
