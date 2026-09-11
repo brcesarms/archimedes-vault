@@ -15,6 +15,7 @@
 | 🧠 GEEKOM A7 MAX | `ssh geekom` — brn@10.0.0.3, chave ed25519 (migrado 2026-09-04) | 🏰 **Cofre principal** + IA local (Ollama/OpenCode) |
 | 🚀 Alienware | `ssh laptop-brn` — bruno@10.0.0.5, chave ed25519 **também no GEEKOM** (configurado 2026-09-09) | 🎮 NVIDIA RTX 5060 (CUDA) — IA local |
 | 💻 ACER Paula | Local (esta máquina) | 🛠️ **Backup/manutenção** do GEEKOM (não roda IA local) |
+| 🪟 Notebook Pri | `ssh <user>@<ip>` — Windows (OpenSSH), chave ed25519 do Bruno | 🛠️ Manutenção e suporte remoto |
 
 > 🔑 **GEEKOM → Alienware**: o GEEKOM tem chave própria (`~/.ssh/id_ed25519`) + config `Host laptop-brn` para `10.0.0.5`. A ACER usa o mesmo alias (`laptop-brn`). Ambas as máquinas conseguem `ssh laptop-brn` direto.
 
