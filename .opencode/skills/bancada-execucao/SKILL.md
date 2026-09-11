@@ -112,6 +112,6 @@ Resumo em pt-BR com emojis: hostname, nº de usuários, nº de softwares, pastas
 
 ## 🔗 Fontes
 
-- [docs/instrucoes.md](../../../projetos/projeto-bancada/docs/instrucoes.md) (fora do vault)
+- 📖 Projeto Bancada (fora do vault): `~/projetos/projeto-bancada/docs/instrucoes.md`
 - [Convenção SSH](../../convencoes/convencoes-ssh.md)
 - [Convenção de Projetos](../../convencoes/convencoes-projetos.md)
