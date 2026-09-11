@@ -48,6 +48,13 @@ Esta skill valida links markdown em arquivos do cofre usando o **script Python**
 
 > 🧪 **Testes obrigatórios:** todo script Python novo em `scripts/python/` deve ter testes em `tests/` (ver skill `revisar-scripts` e nota `arquitetura-vault.md`).
 
+## 🧠 Lições Aprendidas (auditoria 2026-09-11)
+
+1. **Subagentes erram a profundidade de links relativos** — notas geradas por IA usavam padrões errados: `../AGENTS.md` (deveria ser `../../AGENTS.md` por estar em `notas/`), `./guia-ia-local/README.md` (deveria ser `../README.md`), `reestruturação` com cedilha (arquivo real é sem acento). **Sempre revalidar após gerar notas em lote.**
+2. **Acentos/cedilhas quebram links silenciosamente** — o cofre usa `kebab-case` SEM acento; link com `ç` não resolve. Se o arquivo existe mas o validador aponta quebrado, confira acentuação do nome.
+3. **Falso-positivos automáticos** — `node_modules`, curingas `*`/`?`, URLs externas, âncoras e code blocks são ignorados pelo script. **Não** corrigir esses links.
+4. **Erros sistemáticos → correção em lote**: quando o MESMO padrão repete em vários arquivos (ex: `guia-ia-local/guia-ia-local`, `../.opencode/`), usar `git grep` para mapear e edições com `replaceAll` por arquivo — depois revalidar até 0.
+
 ## 🔗 Fontes
 
 - 📄 Processo definido em: [`AGENTS.md`](../../../AGENTS.md)

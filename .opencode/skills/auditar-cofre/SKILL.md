@@ -13,14 +13,16 @@ Realize esta auditoria quando solicitado. Ela verifica a saúde do vault e gera 
 
 ## 🔍 1. Links Quebrados
 
-- Analisar todos os arquivos Markdown buscando links `[Texto](caminho)`
-- Verificar se o destino realmente existe no cofre
-- Listar os links quebrados ou caminhos incorretos
+Usar o **validador Python** (skill [`validar-links-md`](../validar-links-md/SKILL.md)) — mais preciso que grep:
 
-Comando útil para varrer links:
 ```bash
-grep -rEn '\[[^]]*\]\([^)]*\)' ~/archimedes-vault --include="*.md"
+cd ~/archimedes-vault/guia-ia-local/scripts/python
+source .venv/bin/activate
+python3 validar_links.py ~/archimedes-vault --raiz ~/archimedes-vault
 ```
+
+- ❌ links quebrados reais → corrigir (ver lições na skill `validar-links-md`)
+- ⚪ já ignorados automaticamente: `node_modules`, curingas `*`/`?`, URLs externas, âncoras, code blocks
 
 ## 🕸️ 2. Notas Órfãs
 
