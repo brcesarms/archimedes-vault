@@ -188,7 +188,7 @@ archimedes-vault/                   <-- Raiz do seu repositório / cofre princip
 
 ### 🛠️ Skills do Projeto
 
-* 🗒️ `notas-atomicas` · 🏥 `auditar-cofre` · 🐧 `script-linux` · 🩺 `revisar-scripts` · 🗺️ `criar-moc` · 🔄 `backup-cofre` · 🗂️ `organizar-cofre` · 🔗 `gerenciar-links` · 🧼 `auditar-skills` · 🔌 `atualizar-ssh` · 🤖 `orquestrar-tarefa` · 🔍 `validar-links-md` · 📋 `validar-prompt-executor` · 🔒 `validar-scripts-cofre` · 🕸️ `validar-teia`
+* 🗒️ `notas-atomicas` · 🏥 `auditar-cofre` · 🐧 `script-linux` · 🩺 `revisar-scripts` · 🗺️ `criar-moc` · 🔄 `backup-cofre` · 🗂️ `organizar-cofre` · 🔗 `gerenciar-links` · 🧼 `auditar-skills` · 🔌 `atualizar-ssh` · 🤖 `orquestrar-tarefa` · 🔍 `validar-links-md` · 📋 `validar-prompt-executor` · 🔒 `validar-scripts-cofre` · 🕸️ `validar-teia` · 🏗️ `bancada-execucao`
 * **Como criar skill nova:** Salvar em `.opencode/skills/<nome-da-skill>/SKILL.md` contendo frontmatter `name` e `description`.
 
 ---
