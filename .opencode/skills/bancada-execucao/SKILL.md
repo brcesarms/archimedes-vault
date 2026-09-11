@@ -19,6 +19,7 @@ metadata:
 ├── scripts/python/orquestrador.py      <-- Orquestrador principal
 ├── scripts/powershell/inventario.ps1   <-- Inventário JSON (Etapa 1)
 ├── scripts/powershell/backup-robocopy.ps1 <-- Backup por usuário (Etapa 2)
+├── scripts/powershell/Win11Debloat.ps1 <-- 🧹 Desbloat pós-formatação (Etapa 4, opcional)
 ├── templates/MANIFESTO_TEMPLATE.md     <-- Modelo do manifesto
 └── manifests/                          <-- Manifestos gerados (gitignored 🛡️)
 ```
