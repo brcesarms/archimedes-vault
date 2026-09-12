@@ -49,10 +49,12 @@ Após renderizar o painel, pergunte ao usuário quais etapas deseja executar e c
 /home/brn/projetos/projeto-bancada/
 ├── scripts/python/orquestrador.py      <-- Orquestrador principal
 ├── scripts/powershell/inventario.ps1   <-- Inventário JSON (Etapa 1)
-├── scripts/powershell/backup-robocopy.ps1 <-- Backup por usuário (Etapa 2)
 ├── scripts/powershell/Win11Debloat.ps1 <-- 🧹 Desbloat pós-formatação (Etapa 4, opcional)
 ├── templates/MANIFESTO_TEMPLATE.md     <-- Modelo do manifesto
 └── manifests/                          <-- Manifestos gerados (gitignored 🛡️)
+
+# Backup (Etapa 2) — módulo externo, referenciado por caminho absoluto:
+/home/brn/projetos/archimedes-backup/windows/backup-robocopy.ps1  <-- Backup por usuário
 ```
 
 > 📖 Detalhes completos: `docs/instrucoes.md` dentro do projeto.

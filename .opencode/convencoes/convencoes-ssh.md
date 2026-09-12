@@ -16,6 +16,7 @@
 | 🚀 Alienware | `ssh laptop-brn` — bruno@10.0.0.5, chave ed25519 **também no GEEKOM** (configurado 2026-09-09) | 🎮 NVIDIA RTX 5060 (CUDA) — IA local |
 | 💻 ACER Paula | Local (esta máquina) | 🛠️ **Backup/manutenção** do GEEKOM (não roda IA local) |
 | 🪟 Notebook Pri | `ssh pri@10.0.0.216` — Windows 11 (OpenSSH), chave ed25519 do Bruno | 🛠️ Manutenção e suporte remoto |
+| 🗂️ Servidor de Arquivos (CT 103) | `ssh root@10.0.0.4` ou `ssh backup@10.0.0.4` — LXC Debian 13 (privileged) no Proxmox, senha em `~/.config/servidor-arquivos/` | 📁 Samba + NFS + SFTP — destino dos backups robocopy |
 
 > 🔑 **GEEKOM → Alienware**: o GEEKOM tem chave própria (`~/.ssh/id_ed25519`) + config `Host laptop-brn` para `10.0.0.5`. A ACER usa o mesmo alias (`laptop-brn`). Ambas as máquinas conseguem `ssh laptop-brn` direto.
 

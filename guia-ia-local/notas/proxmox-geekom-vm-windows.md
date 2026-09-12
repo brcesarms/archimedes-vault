@@ -18,6 +18,7 @@ O GEEKOM A7 MAX ("AI") foi transformado em servidor **Proxmox VE 9.2**. O Archim
 | **VM 100 — ubuntu24.04** | Ligada · 8 vCPU · 20 GB RAM |
 | **VM 101 — win11** | Ligada · 4 vCPU · 8 GB RAM · **IP `10.0.0.217`** |
 | **CT 102 — netboot-xyz** | Parada · 4 vCPU · 4 GB RAM |
+| **CT 103 — arquivos** | Ligado · 2 vCPU · 2 GB RAM · 200 GB · **IP `10.0.0.4`** — Samba + NFS + SFTP |
 
 > 🔐 **Token API:** salvo em `~/.config/proxmox/archimedes-token` (permissão 600, **fora do git**). Usuário `archimedes@pve` com role **PVEVMUser** (gerencia VMs, não mexe no host).
 
