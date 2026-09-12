@@ -55,18 +55,19 @@ for perfil in geekom alienware acer-paula; do
     fi
 done
 
-# ── Verificar opencode.json conecta aos perfis ──────────────────
+# ── Verificar arquivos de perfil existem ───────────────────────
 log ""
-log "⏳ [4/6] Verificando opencode.json ↔ perfis..."
-if [ -f "$COFRE_DIR/opencode.json" ]; then
-    for perfil in geekom alienware acer-paula; do
-        if grep -q "\"$perfil\":" "$COFRE_DIR/opencode.json"; then
-            log "✅ opencode.json define perfil '$perfil'"
-        else
-            log "❌ opencode.json NÃO define perfil '$perfil'"
-        fi
-    done
-fi
+log "⏳ [4/6] Verificando arquivos de perfil em guia-ia-local/perfis/..."
+PERFIS_EXISTENTES=0
+for perfil in geekom alienware acer-paula; do
+    arquivo="$PERFIS_DIR/${perfil}.md"
+    if [ -f "$arquivo" ]; then
+        log "✅ perfis/${perfil}.md presente"
+        PERFIS_EXISTENTES=$((PERFIS_EXISTENTES + 1))
+    else
+        log "❌ perfis/${perfil}.md FALTANDO"
+    fi
+done
 
 # ── Verificar sistema Cérebro ───────────────────────────────────
 log ""
@@ -108,12 +109,13 @@ done
 log ""
 log "===== 📊 Resumo da Validação da Teia ====="
 log "Nó central (MY-SETUP.md): ✅"
+log "Perfis existentes (arquivos): $PERFIS_EXISTENTES/3"
 log "Perfis conectados (MY-SETUP → PERFIS): $PERFIS_NOS_LINKS/3"
 log "Perfis com links reversos (PERFIS → MY-SETUP): $PERFIS_COM_LINKS/3"
 log "Docs essenciais: $ESSENCIAIS_PRESENTES/4"
 log ""
 
-if [ "$PERFIS_NOS_LINKS" -eq 3 ] && [ "$PERFIS_COM_LINKS" -eq 3 ] && [ "$ESSENCIAIS_PRESENTES" -eq 4 ]; then
+if [ "$PERFIS_EXISTENTES" -eq 3 ] && [ "$PERFIS_NOS_LINKS" -eq 3 ] && [ "$PERFIS_COM_LINKS" -eq 3 ] && [ "$ESSENCIAIS_PRESENTES" -eq 4 ]; then
     log "✅ Teia de Conexões 100% integrada!"
     exit 0
 else
