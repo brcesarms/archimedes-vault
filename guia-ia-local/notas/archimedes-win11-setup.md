@@ -11,7 +11,7 @@ Reunir **pós-instalação e desbloat do Windows 11** em um repositório único,
 | 🧩 Pós-instalação | `pos-instalacao.ps1` | Ajustes de sistema (energia, tema escuro, privacidade) + **10 apps** e **19 runtimes** via winget |
 | 🧹 Desbloat | `Win11Debloat.ps1` | Remove bloatware, telemetria e ajusta privacidade/visual (cópia offline MIT) |
 
-Arquitetura **controller + agent**: Python só no orquestrador (`projeto-bancada`); motores **PowerShell nativos** no alvo (referenciados por caminho absoluto — zero duplicação).
+Arquitetura **controller + agent**: Python só no orquestrador (`archimedes-orquestrador`); motores **PowerShell nativos** no alvo (referenciados por caminho absoluto — zero duplicação).
 
 ## 📁 Estrutura
 
@@ -28,9 +28,9 @@ Arquitetura **controller + agent**: Python só no orquestrador (`projeto-bancada
 └── LICENSE                   <-- MIT
 ```
 
-## 🔀 Relação com o projeto-bancada
+## 🔀 Relação com o archimedes-orquestrador
 
-- O `pos-instalacao.ps1`, `Win11Debloat.ps1`, `Win11Debloat.zip` e `Win11Debloat/` **saíram** de `projeto-bancada/scripts/powershell/` (2026-09-12).
+- O `pos-instalacao.ps1`, `Win11Debloat.ps1`, `Win11Debloat.zip` e `Win11Debloat/` **saíram** de `archimedes-orquestrador/scripts/powershell/` (2026-09-12).
 - O `orquestrador.py` da bancada referencia **caminho absoluto** `~/projetos/archimedes-win11-setup/windows/` — sem duplicar código (mesmo padrão do `archimedes-backup`).
 - Disparo remoto via flags `--pos` (completa/ajustes/sem-runtimes/sem-apps) e `--debloat` (completo/lite).
 
@@ -48,8 +48,8 @@ Arquitetura **controller + agent**: Python só no orquestrador (`projeto-bancada
 
 - ✔ Repo criado e público: [brcesarms/archimedes-win11-setup](https://github.com/brcesarms/archimedes-win11-setup) (commit `cadc547`).
 - ✔ 404 arquivos versionados (pacote Win11Debloat completo, antes fora do git).
-- ✔ `projeto-bancada` atualizado (`e9e6d56`) — fluxo `--pos`/`--debloat` funcionando via caminho absoluto.
-- ✔ 23 testes do projeto-bancada passando após a migração.
+- ✔ `archimedes-orquestrador` atualizado (`e9e6d56`) — fluxo `--pos`/`--debloat` funcionando via caminho absoluto.
+- ✔ 23 testes do archimedes-orquestrador passando após a migração.
 
 ## 🔗 Fontes
 

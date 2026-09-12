@@ -10,7 +10,7 @@
 /home/brn/
 ├── archimedes-vault/       <-- 🏛️ Cofre Obsidian (histórico de conhecimento) — NÃO MEXER
 ├── projetos/               <-- 📂 PASTA CENTRAL DE PROJETOS
-│   ├── projeto-bancada/    <-- ✅ Repo GitHub: brcesarms/projeto-bancada
+│   ├── archimedes-orquestrador/    <-- ✅ Repo GitHub: brcesarms/archimedes-orquestrador
 │   ├── archimedes-backup/  <-- ✅ Repo GitHub: brcesarms/archimedes-backup (backup único: robocopy + rsync)
 │   └── archimedes-win11-setup/ <-- ✅ Repo GitHub: brcesarms/archimedes-win11-setup (pós-instalação + desbloat Win11)
 └── ...pastas padrão...     <-- Documentos, Downloads, etc.
@@ -21,17 +21,17 @@
 | Regra | Detalhe |
 | :--- | :--- |
 | **Localização** | Todo novo projeto/repo clonado ou criado → `~/projetos/<nome>/` |
-| **Nome da pasta** | `kebab-case`, minúsculo, sem acento (ex: `projeto-bancada`) |
+| **Nome da pasta** | `kebab-case`, minúsculo, sem acento (ex: `archimedes-orquestrador`) |
 | **Vault é sagrado** | `~/archimedes-vault` NÃO move — caminhos absolutos fixos (AGENTS.md, opencode, submódulos) |
 | **Novo repo GitHub** | Criar pasta em `~/projetos/`, clonar/nascer lá, push direto |
 | **Migrações** | Sempre solicitar aprovação antes de mover pastas existentes |
-| **🔗 Interligação entre repos** | Repositórios **NUNCA são silos**: documentação que afete outro projeto DEVE ser referenciada cruzadamente (guia de preparação no `archimedes-backup` ↔ vault/skills ↔ projeto-bancada). Ao criar/editar doc, procure onde ela deveria ser linkada nos demais repos. |
+| **🔗 Interligação entre repos** | Repositórios **NUNCA são silos**: documentação que afete outro projeto DEVE ser referenciada cruzadamente (guia de preparação no `archimedes-backup` ↔ vault/skills ↔ archimedes-orquestrador). Ao criar/editar doc, procure onde ela deveria ser linkada nos demais repos. |
 
 ## 🗺️ Mapa de Projetos Atuais
 
 | Projeto | Caminho Local | Repo GitHub | Visibilidade |
 | :--- | :--- | :--- | :--- |
-| projeto-bancada | `~/projetos/projeto-bancada/` | `brcesarms/projeto-bancada` | 🌐 Público |
+| archimedes-orquestrador | `~/projetos/archimedes-orquestrador/` | `brcesarms/archimedes-orquestrador` | 🌐 Público |
 | archimedes-backup | `~/projetos/archimedes-backup/` | `brcesarms/archimedes-backup` | 🌐 Público |
 | archimedes-win11-setup | `~/projetos/archimedes-win11-setup/` | `brcesarms/archimedes-win11-setup` | 🌐 Público |
 

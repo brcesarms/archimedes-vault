@@ -79,7 +79,7 @@ cat /etc/pve/firewall/cluster.fw   # ausente = desabilitado
 - 🛡️ **Regra de firewall mínima** (`allow` só na porta 22) é melhor que desligar o firewall.
 - 🔑 **API token** com role mínima (`PVEVMUser`) + **chave SSH** é o padrão seguro; nunca senha root no cofre.
 - 📄 **Scripts PowerShell p/ Windows devem ser UTF-8 com BOM + CRLF** (senão Windows PowerShell 5.1 interpreta ANSI e quebra com `ParserError`).
-- ⚠️ **BOM DUPLICADO também quebra:** um `.ps1` com 2× `EF BB BF` gera `ParserError` no PS 5.1 (ex: `Atributo 'CmdletBinding' inesperado`). Conferir com `od -c` — os primeiros bytes devem ser uma única sequência `357 273 277 #`. 🐛 Caso real: `pos-instalacao.ps1` do projeto-bancada (2026-09-11).
+- ⚠️ **BOM DUPLICADO também quebra:** um `.ps1` com 2× `EF BB BF` gera `ParserError` no PS 5.1 (ex: `Atributo 'CmdletBinding' inesperado`). Conferir com `od -c` — os primeiros bytes devem ser uma única sequência `357 273 277 #`. 🐛 Caso real: `pos-instalacao.ps1` do archimedes-orquestrador (2026-09-11).
 - 🎁 **Guest agent nas VMs Windows** = superpoder para automação (`qm guest exec`).
 
 ---

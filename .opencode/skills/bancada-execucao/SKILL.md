@@ -9,7 +9,7 @@ metadata:
 
 # 🏗️ Execução do Projeto Bancada
 
-> **Objetivo:** padronizar a execução do fluxo de bancada (inventário técnico + backup robocopy + manifesto + pós-instalação) via orquestrador Python em `~/projetos/projeto-bancada/`.
+> **Objetivo:** padronizar a execução do fluxo de bancada (inventário técnico + backup robocopy + manifesto + pós-instalação) via orquestrador Python em `~/projetos/archimedes-orquestrador/`.
 > **Testado em:** 2026-09-11 — estrutura implementada e testes internos (parse JSON + manifesto + menu interativo) ✅
 
 ## 🖥️ Tela Inicial Padrão (OBRIGATÓRIA)
@@ -46,7 +46,7 @@ Após renderizar o painel, pergunte ao usuário quais etapas deseja executar e c
 ## 📍 Localização do Projeto
 
 ```text
-/home/brn/projetos/projeto-bancada/
+/home/brn/projetos/archimedes-orquestrador/
 ├── scripts/python/orquestrador.py      <-- Orquestrador principal
 ├── scripts/powershell/inventario.ps1   <-- Inventário JSON (Etapa 1)
 ├── templates/MANIFESTO_TEMPLATE.md     <-- Modelo do manifesto
@@ -65,9 +65,9 @@ Após renderizar o painel, pergunte ao usuário quais etapas deseja executar e c
 
 ## 🚦 Pré-requisitos (verificar antes de começar)
 
-1. **Pasta `~/projetos/projeto-bancada/` existe** — se não, clonar:
+1. **Pasta `~/projetos/archimedes-orquestrador/` existe** — se não, clonar:
    ```bash
-   git clone git@github.com:brcesarms/projeto-bancada.git ~/projetos/projeto-bancada
+   git clone git@github.com:brcesarms/archimedes-orquestrador.git ~/projetos/archimedes-orquestrador
    ```
 2. **Python + paramiko** instalados:
    ```bash
@@ -93,14 +93,14 @@ Após renderizar o painel, pergunte ao usuário quais etapas deseja executar e c
 ### Passo 1 — Confirmar ambiente local
 
 ```bash
-ls ~/projetos/projeto-bancada/scripts/python/orquestrador.py
+ls ~/projetos/archimedes-orquestrador/scripts/python/orquestrador.py
 python3 -c "import paramiko" && echo OK
 ```
 
 ### Passo 2 — Rodar o orquestrador
 
 ```bash
-python3 ~/projetos/projeto-bancada/scripts/python/orquestrador.py \
+python3 ~/projetos/archimedes-orquestrador/scripts/python/orquestrador.py \
   --host <IP> \
   --usuario <USUARIO> \
   --cliente <CLIENTE> \
@@ -109,7 +109,7 @@ python3 ~/projetos/projeto-bancada/scripts/python/orquestrador.py \
 ```
 
 > ⚠️ **Caminho UNC:** usar aspas simples ou escape duplo (`\\\\`) — o shell interpreta contrabarras.
-> ⚠️ Executar a partir de `~/projetos/projeto-bancada/` (o script resolve caminhos relativos ao projeto).
+> ⚠️ Executar a partir de `~/projetos/archimedes-orquestrador/` (o script resolve caminhos relativos ao projeto).
 
 ### Passo 3 — Verificar saída (não confiar só no relatório!)
 
@@ -119,8 +119,8 @@ python3 ~/projetos/projeto-bancada/scripts/python/orquestrador.py \
 
 **Verificação independente (obrigatória):**
 ```bash
-ls -la ~/projetos/projeto-bancada/manifests/MANIFESTO_<CLIENTE>_*.md
-wc -l ~/projetos/projeto-bancada/manifests/MANIFESTO_<CLIENTE>_*.md
+ls -la ~/projetos/archimedes-orquestrador/manifests/MANIFESTO_<CLIENTE>_*.md
+wc -l ~/projetos/archimedes-orquestrador/manifests/MANIFESTO_<CLIENTE>_*.md
 ```
 
 ### Passo 4 — Reportar ao usuário
@@ -150,6 +150,6 @@ Resumo em pt-BR com emojis: hostname, nº de usuários, nº de softwares, pastas
 
 ## 🔗 Fontes
 
-- 📖 Projeto Bancada (fora do vault): `~/projetos/projeto-bancada/docs/instrucoes.md`
+- 📖 Projeto Bancada (fora do vault): `~/projetos/archimedes-orquestrador/docs/instrucoes.md`
 - [Convenção SSH](../../convencoes/convencoes-ssh.md)
 - [Convenção de Projetos](../../convencoes/convencoes-projetos.md)
