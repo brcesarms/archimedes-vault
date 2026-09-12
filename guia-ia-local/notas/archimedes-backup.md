@@ -52,15 +52,33 @@ caminho = /srv/arquivos/backup/omarchy-paula/
 
 > `--novo-perfil` gera o esqueleto; edite e rode `--perfil <nome>`.
 
+## 🌐 Backup do navegador (favoritos + senhas criptografadas)
+
+Desde 2026-09-12 (`b09711e`) o orquestrador suporta **backup de navegador Chrome/Edge** quando o
+perfil tem `[navegador] ativo = true`:
+
+| Plataforma | Script | O que copia (destino: `navegador/<browser>/...`) |
+| :--- | :--- | :--- |
+| 🐧 Linux | `linux/motor-navegador.sh` (enviado à origem via scp) | `Local State` + por perfil: `Bookmarks`, `Bookmarks.bak`, `Login Data` |
+| 🪟 Windows | `windows/backup-navegador.ps1` (via SSH/robocopy) | idem, sob `$Destino\navegador\<browser>\` |
+
+- **Detecção:** navegador padrão (`xdg-settings` no Linux / associação `http` → `ChromeHTML`/`MSEdgeHTM` no Windows), com fallback por instalação.
+- ⚠️ **Senhas:** somente como arquivo criptografado (`Login Data`, DPAPI no Windows) — **nunca** texto plano; restauram no mesmo usuário/máquina; destino sugerido: storage interno.
+- Se o navegador nunca foi aberto (sem perfis), o motor avisa e pula.
+
 ## 🛡️ Política de segurança (bancada)
 
 - Ambiente confiável: host keys automáticas + senha via prompt (nunca salva).
 - **Nunca** commitar senha/token/chave privada (`manifests/` e `logs/` gitignored).
 - Fora da bancada → adotar chave obrigatória + `known_hosts`.
 
-## ⚠️ Próximo passo conhecido
+## ✅ Status 2026-09-12
 
-- Testar perfil real `omarchy-paula` (**SSH do Omarchy `10.0.0.218` precisa estar ativo** — porta 22 atualmente fechada).
+- ✔ SSH ativo no Omarchy (`10.0.0.218`) + chave do operador autorizada.
+- ✔ 1º backup real `omarchy-paula` concluído: **314 arquivos · 89 GB** em `backup@10.0.0.4:/srv/arquivos/backup/omarchy-paula/`.
+- ✔ Perfil atualizado: `caminho = /run/media/paula/BRUNO/pma` (partição exfat montada — não usar `/dev/sda3/pma`).
+- ✔ Backup diário futuro: `python3 orquestrador.py --perfil omarchy-paula` (1 comando, sem senha).
+- ℹ Chrome instalado no Omarchy porém **nunca aberto** — motor-navegador roda e avisa que não há perfis (comportamento esperado).
 
 ## 🔗 Fontes
 
