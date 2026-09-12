@@ -56,9 +56,9 @@ Após renderizar o painel, pergunte ao usuário quais etapas deseja executar e c
 /home/brn/projetos/archimedes-backup/windows/backup-robocopy.ps1  <-- Backup por usuário
 
 # Pós-instalação (Etapa 4) + Desbloat (Etapa 5) — módulo externo:
-/home/brn/projetos/archimedes-after-install-win11/windows/pos-instalacao.ps1  <-- ajustes + apps + runtimes
-/home/brn/projetos/archimedes-after-install-win11/windows/Win11Debloat.ps1    <-- desbloat pós-formatação
-/home/brn/projetos/archimedes-after-install-win11/windows/Win11Debloat.zip    <-- pacote p/ envio remoto
+/home/brn/projetos/archimedes-win11-setup/windows/pos-instalacao.ps1  <-- ajustes + apps + runtimes
+/home/brn/projetos/archimedes-win11-setup/windows/Win11Debloat.ps1    <-- desbloat pós-formatação
+/home/brn/projetos/archimedes-win11-setup/windows/Win11Debloat.zip    <-- pacote p/ envio remoto
 ```
 
 > 📖 Detalhes completos: `docs/instrucoes.md` dentro do projeto.

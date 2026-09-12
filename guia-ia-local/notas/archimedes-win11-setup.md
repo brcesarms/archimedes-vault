@@ -1,6 +1,6 @@
 # 🪟 Archimedes After-Install Win11 — repositório de pós-instalação do Windows 11
 
-> Criação: 2026-09-12 · Status: 🟢 ativo · Repo: [brcesarms/archimedes-after-install-win11](https://github.com/brcesarms/archimedes-after-install-win11)
+> Criação: 2026-09-12 · Status: 🟢 ativo · Repo: [brcesarms/archimedes-win11-setup](https://github.com/brcesarms/archimedes-win11-setup)
 
 ## 🎯 Objetivo
 
@@ -16,7 +16,7 @@ Arquitetura **controller + agent**: Python só no orquestrador (`projeto-bancada
 ## 📁 Estrutura
 
 ```text
-~/projetos/archimedes-after-install-win11/
+~/projetos/archimedes-win11-setup/
 ├── windows/
 │   ├── pos-instalacao.ps1    <-- 🧩 Migrado: ajustes + apps + runtimes
 │   ├── Win11Debloat.ps1      <-- 🧹 Migrado: script principal do debloat (628 linhas)
@@ -31,7 +31,7 @@ Arquitetura **controller + agent**: Python só no orquestrador (`projeto-bancada
 ## 🔀 Relação com o projeto-bancada
 
 - O `pos-instalacao.ps1`, `Win11Debloat.ps1`, `Win11Debloat.zip` e `Win11Debloat/` **saíram** de `projeto-bancada/scripts/powershell/` (2026-09-12).
-- O `orquestrador.py` da bancada referencia **caminho absoluto** `~/projetos/archimedes-after-install-win11/windows/` — sem duplicar código (mesmo padrão do `archimedes-backup`).
+- O `orquestrador.py` da bancada referencia **caminho absoluto** `~/projetos/archimedes-win11-setup/windows/` — sem duplicar código (mesmo padrão do `archimedes-backup`).
 - Disparo remoto via flags `--pos` (completa/ajustes/sem-runtimes/sem-apps) e `--debloat` (completo/lite).
 
 ## 🧠 Ordem ideal na bancada
@@ -46,14 +46,14 @@ Arquitetura **controller + agent**: Python só no orquestrador (`projeto-bancada
 
 ## ✅ Status 2026-09-12
 
-- ✔ Repo criado e público: [brcesarms/archimedes-after-install-win11](https://github.com/brcesarms/archimedes-after-install-win11) (commit `cadc547`).
+- ✔ Repo criado e público: [brcesarms/archimedes-win11-setup](https://github.com/brcesarms/archimedes-win11-setup) (commit `cadc547`).
 - ✔ 404 arquivos versionados (pacote Win11Debloat completo, antes fora do git).
 - ✔ `projeto-bancada` atualizado (`e9e6d56`) — fluxo `--pos`/`--debloat` funcionando via caminho absoluto.
 - ✔ 23 testes do projeto-bancada passando após a migração.
 
 ## 🔗 Fontes
 
-- [Repositório archimedes-after-install-win11](https://github.com/brcesarms/archimedes-after-install-win11)
+- [Repositório archimedes-win11-setup](https://github.com/brcesarms/archimedes-win11-setup)
 - [Win11Debloat — Raphire (GitHub)](https://github.com/Raphire/Win11Debloat)
 - [winget — Microsoft Learn](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
 - [Nota: Archimedes Backup](../notas/archimedes-backup.md)

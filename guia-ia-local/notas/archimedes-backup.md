@@ -37,7 +37,7 @@ Arquitetura **controller + agent**: Python só no orquestrador; motores **nativo
 
 | Repo | Papel |
 | :--- | :--- |
-| [`archimedes-after-install-win11`](./archimedes-after-install-win11.md) | 🪟 Pós-instalação (apps + runtimes) e desbloat do Windows 11 — mesma arquitetura controller + agent, referenciado por caminho absoluto |
+| [`archimedes-win11-setup`](./archimedes-win11-setup.md) | 🪟 Pós-instalação (apps + runtimes) e desbloat do Windows 11 — mesma arquitetura controller + agent, referenciado por caminho absoluto |
 
 > 🧠 **Ordem ideal na bancada:** Backup (este repo) → Formatação → Desbloat → Pós-instalação → Entrega.
 
@@ -91,6 +91,6 @@ perfil tem `[navegador] ativo = true`:
 ## 🔗 Fontes
 
 - [Repositório archimedes-backup](https://github.com/brcesarms/archimedes-backup)
-- [Nota: Archimedes After-Install Win11](./archimedes-after-install-win11.md)
+- [Nota: Archimedes After-Install Win11](./archimedes-win11-setup.md)
 - [Robocopy — Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy)
 - [rsync man page](https://linux.die.net/man/1/rsync)

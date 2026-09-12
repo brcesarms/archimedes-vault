@@ -12,7 +12,7 @@
 ├── projetos/               <-- 📂 PASTA CENTRAL DE PROJETOS
 │   ├── projeto-bancada/    <-- ✅ Repo GitHub: brcesarms/projeto-bancada
 │   ├── archimedes-backup/  <-- ✅ Repo GitHub: brcesarms/archimedes-backup (backup único: robocopy + rsync)
-│   └── archimedes-after-install-win11/ <-- ✅ Repo GitHub: brcesarms/archimedes-after-install-win11 (pós-instalação + desbloat Win11)
+│   └── archimedes-win11-setup/ <-- ✅ Repo GitHub: brcesarms/archimedes-win11-setup (pós-instalação + desbloat Win11)
 └── ...pastas padrão...     <-- Documentos, Downloads, etc.
 ```
 
@@ -33,7 +33,7 @@
 | :--- | :--- | :--- | :--- |
 | projeto-bancada | `~/projetos/projeto-bancada/` | `brcesarms/projeto-bancada` | 🌐 Público |
 | archimedes-backup | `~/projetos/archimedes-backup/` | `brcesarms/archimedes-backup` | 🌐 Público |
-| archimedes-after-install-win11 | `~/projetos/archimedes-after-install-win11/` | `brcesarms/archimedes-after-install-win11` | 🌐 Público |
+| archimedes-win11-setup | `~/projetos/archimedes-win11-setup/` | `brcesarms/archimedes-win11-setup` | 🌐 Público |
 
 ## ⚙️ Fluxo para Novo Projeto
 
