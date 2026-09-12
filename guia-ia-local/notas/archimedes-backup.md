@@ -33,6 +33,14 @@ Arquitetura **controller + agent**: Python só no orquestrador; motores **nativo
 - O `backup-robocopy.ps1` **saiu** de `projeto-bancada/scripts/powershell/` (2026-09-12).
 - O `orquestrador.py` da bancada referencia **caminho absoluto** `~/projetos/archimedes-backup/windows/backup-robocopy.ps1` — sem duplicar código.
 
+## 🔗 Relação com o ecossistema Archimedes
+
+| Repo | Papel |
+| :--- | :--- |
+| [`archimedes-after-install-win11`](./archimedes-after-install-win11.md) | 🪟 Pós-instalação (apps + runtimes) e desbloat do Windows 11 — mesma arquitetura controller + agent, referenciado por caminho absoluto |
+
+> 🧠 **Ordem ideal na bancada:** Backup (este repo) → Formatação → Desbloat → Pós-instalação → Entrega.
+
 ## 🔑 Perfis (config/perfis/*.conf)
 
 ```ini
@@ -83,5 +91,6 @@ perfil tem `[navegador] ativo = true`:
 ## 🔗 Fontes
 
 - [Repositório archimedes-backup](https://github.com/brcesarms/archimedes-backup)
+- [Nota: Archimedes After-Install Win11](./archimedes-after-install-win11.md)
 - [Robocopy — Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy)
 - [rsync man page](https://linux.die.net/man/1/rsync)
