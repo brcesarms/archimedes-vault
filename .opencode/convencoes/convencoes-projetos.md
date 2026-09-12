@@ -11,7 +11,7 @@
 ├── archimedes-vault/       <-- 🏛️ Cofre Obsidian (histórico de conhecimento) — NÃO MEXER
 ├── projetos/               <-- 📂 PASTA CENTRAL DE PROJETOS
 │   ├── projeto-bancada/    <-- ✅ Repo GitHub: brcesarms/projeto-bancada
-│   └── <novo-projeto>/     <-- 🆕 Próximos projetos nascem aqui
+│   └── archimedes-backup/  <-- ✅ Repo GitHub: brcesarms/archimedes-backup (backup único: robocopy + rsync)
 └── ...pastas padrão...     <-- Documentos, Downloads, etc.
 ```
 
@@ -24,12 +24,14 @@
 | **Vault é sagrado** | `~/archimedes-vault` NÃO move — caminhos absolutos fixos (AGENTS.md, opencode, submódulos) |
 | **Novo repo GitHub** | Criar pasta em `~/projetos/`, clonar/nascer lá, push direto |
 | **Migrações** | Sempre solicitar aprovação antes de mover pastas existentes |
+| **🔗 Interligação entre repos** | Repositórios **NUNCA são silos**: documentação que afete outro projeto DEVE ser referenciada cruzadamente (guia de preparação no `archimedes-backup` ↔ vault/skills ↔ projeto-bancada). Ao criar/editar doc, procure onde ela deveria ser linkada nos demais repos. |
 
 ## 🗺️ Mapa de Projetos Atuais
 
 | Projeto | Caminho Local | Repo GitHub | Visibilidade |
 | :--- | :--- | :--- | :--- |
 | projeto-bancada | `~/projetos/projeto-bancada/` | `brcesarms/projeto-bancada` | 🌐 Público |
+| archimedes-backup | `~/projetos/archimedes-backup/` | `brcesarms/archimedes-backup` | 🌐 Público |
 
 ## ⚙️ Fluxo para Novo Projeto
 
