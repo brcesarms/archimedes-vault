@@ -49,12 +49,16 @@ Após renderizar o painel, pergunte ao usuário quais etapas deseja executar e c
 /home/brn/projetos/projeto-bancada/
 ├── scripts/python/orquestrador.py      <-- Orquestrador principal
 ├── scripts/powershell/inventario.ps1   <-- Inventário JSON (Etapa 1)
-├── scripts/powershell/Win11Debloat.ps1 <-- 🧹 Desbloat pós-formatação (Etapa 4, opcional)
 ├── templates/MANIFESTO_TEMPLATE.md     <-- Modelo do manifesto
 └── manifests/                          <-- Manifestos gerados (gitignored 🛡️)
 
 # Backup (Etapa 2) — módulo externo, referenciado por caminho absoluto:
 /home/brn/projetos/archimedes-backup/windows/backup-robocopy.ps1  <-- Backup por usuário
+
+# Pós-instalação (Etapa 4) + Desbloat (Etapa 5) — módulo externo:
+/home/brn/projetos/archimedes-after-install-win11/windows/pos-instalacao.ps1  <-- ajustes + apps + runtimes
+/home/brn/projetos/archimedes-after-install-win11/windows/Win11Debloat.ps1    <-- desbloat pós-formatação
+/home/brn/projetos/archimedes-after-install-win11/windows/Win11Debloat.zip    <-- pacote p/ envio remoto
 ```
 
 > 📖 Detalhes completos: `docs/instrucoes.md` dentro do projeto.

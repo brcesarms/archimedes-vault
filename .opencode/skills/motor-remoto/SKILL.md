@@ -14,7 +14,9 @@ O Archimedes usa **um único motor** para operações remotas: o orquestrador do
 | Item | Caminho |
 | :--- | :--- |
 | Orquestrador | `~/projetos/projeto-bancada/scripts/python/orquestrador.py` |
-| Scripts PowerShell | `~/projetos/projeto-bancada/scripts/powershell/` |
+| Scripts base (inventário) | `~/projetos/projeto-bancada/scripts/powershell/` |
+| Backup (robocopy) | `~/projetos/archimedes-backup/windows/` |
+| Pós-instalação + Desbloat | `~/projetos/archimedes-after-install-win11/windows/` |
 | Venv | `~/projetos/projeto-bancada/.venv` |
 
 ## 📋 Como usar
