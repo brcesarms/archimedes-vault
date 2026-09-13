@@ -14,7 +14,8 @@
 │   ├── archimedes-backup/  <-- ✅ Repo GitHub: brcesarms/archimedes-backup (backup único: robocopy + rsync)
 │   ├── archimedes-win11-setup/ <-- ✅ Repo GitHub: brcesarms/archimedes-win11-setup (pós-instalação + desbloat Win11)
 │   ├── usb-bootavel-tui/    <-- ✅ Repo GitHub: brcesarms/usb-bootavel-tui (criador de pendrive bootável TUI)
-│   └── archimedes-rag/      <-- ✅ Repo GitHub: brcesarms/archimedes-rag (RAG local com AST e LanceDB para OpenCode CLI)
+│   ├── archimedes-rag/      <-- ✅ Repo GitHub: brcesarms/archimedes-rag (RAG local com AST e LanceDB para OpenCode CLI)
+│   └── archimedes-doctor/   <-- ✅ Repo GitHub: brcesarms/archimedes-doctor (Gerador de testes com Self-Healing loop)
 └── ...pastas padrão...     <-- Documentos, Downloads, etc.
 ```
 
@@ -38,6 +39,7 @@
 | archimedes-win11-setup | `~/projetos/archimedes-win11-setup/` | `brcesarms/archimedes-win11-setup` | 🌐 Público |
 | usb-bootavel-tui | `~/projetos/usb-bootavel-tui/` | `brcesarms/usb-bootavel-tui` | 🌐 Público |
 | archimedes-rag | `~/projetos/archimedes-rag/` | `brcesarms/archimedes-rag` | 🌐 Público |
+| archimedes-doctor | `~/projetos/archimedes-doctor/` | `brcesarms/archimedes-doctor` | 🌐 Público |
 
 ## ⚙️ Fluxo para Novo Projeto
 
