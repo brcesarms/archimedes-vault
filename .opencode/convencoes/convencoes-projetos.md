@@ -30,16 +30,16 @@
 | **Migrações** | Sempre solicitar aprovação antes de mover pastas existentes |
 | **🔗 Interligação entre repos** | Repositórios **NUNCA são silos**: documentação que afete outro projeto DEVE ser referenciada cruzadamente (guia de preparação no `archimedes-backup` ↔ vault/skills ↔ archimedes-operator). Ao criar/editar doc, procure onde ela deveria ser linkada nos demais repos. |
 
-## 🗺️ Mapa de Projetos Atuais
+## 🗺️ Mapa de Projetos Atuais (4 Pilares Consolidados)
 
-| Projeto | Caminho Local | Repo GitHub | Visibilidade |
+| Projeto | Caminho Local | Repo GitHub | Papel no Ecossistema |
 | :--- | :--- | :--- | :--- |
-| archimedes-operator | `~/projetos/archimedes-operator/` | `brcesarms/archimedes-operator` | 🌐 Público |
-| archimedes-backup | `~/projetos/archimedes-backup/` | `brcesarms/archimedes-backup` | 🌐 Público |
-| archimedes-win11-setup | `~/projetos/archimedes-win11-setup/` | `brcesarms/archimedes-win11-setup` | 🌐 Público |
-| usb-bootavel-tui | `~/projetos/usb-bootavel-tui/` | `brcesarms/usb-bootavel-tui` | 🌐 Público |
-| archimedes-rag | `~/projetos/archimedes-rag/` | `brcesarms/archimedes-rag` | 🌐 Público |
-| archimedes-doctor | `~/projetos/archimedes-doctor/` | `brcesarms/archimedes-doctor` | 🌐 Público |
+| **archimedes-operator** | `~/projetos/archimedes-operator/` | `brcesarms/archimedes-operator` | 👷‍♂️ Braços Mecânicos (Consolidou Backup, Bancada e Setup) |
+| **archimedes-rag** | `~/projetos/archimedes-rag/` | `brcesarms/archimedes-rag` | 🔍 Memória Semântica Local (LanceDB + AST) |
+| **archimedes-doctor** | `~/projetos/archimedes-doctor/` | `brcesarms/archimedes-doctor` | 🩺 Centro Médico de Código & Auto-Cura (Pytest) |
+| **usb-bootavel-tui** | `~/projetos/usb-bootavel-tui/` | `brcesarms/usb-bootavel-tui` | 🔌 Utilitário TUI de criação de pendrive bootável |
+| *archimedes-backup* | *(Absorvido no operator)* | `brcesarms/archimedes-backup` | 📦 Arquivado / Integrado nativamente no operator |
+| *archimedes-win11-setup* | *(Absorvido no operator)* | `brcesarms/archimedes-win11-setup` | 📦 Arquivado / Integrado nativamente no operator |
 
 ## ⚙️ Fluxo para Novo Projeto
 

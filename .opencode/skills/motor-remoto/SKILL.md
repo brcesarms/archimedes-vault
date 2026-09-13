@@ -13,10 +13,11 @@ O Archimedes usa **um único motor** para operações remotas: o orquestrador do
 
 | Item | Caminho |
 | :--- | :--- |
-| Orquestrador | `~/projetos/archimedes-operator/scripts/python/orquestrador.py` |
-| Scripts base (inventário) | `~/projetos/archimedes-operator/scripts/powershell/` |
-| Backup (robocopy) | `~/projetos/archimedes-backup/windows/` |
-| Pós-instalação + Desbloat | `~/projetos/archimedes-win11-setup/windows/` |
+| CLI Global | `~/.local/bin/operator` |
+| Orquestrador Headless | `~/projetos/archimedes-operator/scripts/python/orquestrador.py` |
+| Menu TUI Interativo | `~/projetos/archimedes-operator/scripts/python/menu.py` |
+| Scripts PowerShell (Inventário, Backup, Setup) | `~/projetos/archimedes-operator/scripts/powershell/` |
+| Scripts Bash (Rsync, Navegadores) | `~/projetos/archimedes-operator/scripts/bash/` |
 | Venv | `~/projetos/archimedes-operator/.venv` |
 
 ## 📋 Como usar
