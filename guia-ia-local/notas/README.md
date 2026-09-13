@@ -9,9 +9,9 @@
 - 🧠 [Lições da Auditoria do Vault — 2026-09-05](./licoes-auditoria-vault-2026-09-05.md) — AGENTS.md bloqueado (U+200D), validação de links, travamentos no terminal
 - 🗺️ [Propostas de MOCs](./propostas-moc.md) — candidatos a Mapas de Conteúdo (concurso, Dart, português)
 - 🔄 [Padrões Detectados — Gestão Git/GitHub](./padroes-detectados.md) — registro de padrões repetidos no versionamento
-- 📦 [Archimedes Backup](./archimedes-backup.md) — repositório único de backups (Windows robocopy + Linux rsync)
-- 🪟 [Archimedes After-Install Win11](./archimedes-win11-setup.md) — pós-instalação e desbloat do Windows 11
-- 🗺️ [Mapa Modular do Ecossistema](./mapa-modular-repos.md) — repos conectados por caminho absoluto, sem duplicação
+- 📦 [Archimedes Backup](./archimedes-backup.md) — histórico do módulo de backups (consolidado no archimedes-operator)
+- 🪟 [Archimedes After-Install Win11](./archimedes-win11-setup.md) — histórico do pós-instalação Win11 (consolidado no archimedes-operator)
+- 🗺️ [Mapa Modular do Ecossistema](./mapa-modular-repos.md) — arquitetura dos 4 pilares do ecossistema Archimedes
 
 ---
 

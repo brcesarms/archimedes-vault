@@ -36,8 +36,6 @@
 | **archimedes-rag** | `~/projetos/archimedes-rag/` | `brcesarms/archimedes-rag` | 🔍 Memória Semântica Local (LanceDB + AST) |
 | **archimedes-doctor** | `~/projetos/archimedes-doctor/` | `brcesarms/archimedes-doctor` | 🩺 Centro Médico de Código & Auto-Cura (Pytest) |
 | **usb-bootavel-tui** | `~/projetos/usb-bootavel-tui/` | `brcesarms/usb-bootavel-tui` | 🔌 Utilitário TUI de criação de pendrive bootável |
-| *archimedes-backup* | *(Absorvido no operator)* | `brcesarms/archimedes-backup` | 📦 Arquivado / Integrado nativamente no operator |
-| *archimedes-win11-setup* | *(Absorvido no operator)* | `brcesarms/archimedes-win11-setup` | 📦 Arquivado / Integrado nativamente no operator |
 
 ## ⚙️ Fluxo para Novo Projeto
 

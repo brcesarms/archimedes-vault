@@ -47,18 +47,19 @@ Após renderizar o painel, pergunte ao usuário quais etapas deseja executar e c
 
 ```text
 /home/brn/projetos/archimedes-operator/
-├── scripts/python/orquestrador.py      <-- Orquestrador principal
-├── scripts/powershell/inventario.ps1   <-- Inventário JSON (Etapa 1)
-├── templates/MANIFESTO_TEMPLATE.md     <-- Modelo do manifesto
-└── manifests/                          <-- Manifestos gerados (gitignored 🛡️)
-
-# Backup (Etapa 2) — módulo externo, referenciado por caminho absoluto:
-/home/brn/projetos/archimedes-backup/windows/backup-robocopy.ps1  <-- Backup por usuário
-
-# Pós-instalação (Etapa 4) + Desbloat (Etapa 5) — módulo externo:
-/home/brn/projetos/archimedes-win11-setup/windows/pos-instalacao.ps1  <-- ajustes + apps + runtimes
-/home/brn/projetos/archimedes-win11-setup/windows/Win11Debloat.ps1    <-- desbloat pós-formatação
-/home/brn/projetos/archimedes-win11-setup/windows/Win11Debloat.zip    <-- pacote p/ envio remoto
+├── bin/operator                         <-- CLI Global / wrapper
+├── scripts/python/
+│   ├── orquestrador.py                  <-- Orquestrador principal
+│   └── menu.py                          <-- Menu TUI interativo
+├── scripts/powershell/
+│   ├── inventario.ps1                   <-- Inventário JSON (Etapa 1)
+│   ├── backup-robocopy.ps1              <-- Backup por usuário (Etapa 2)
+│   ├── pos-instalacao.ps1               <-- Ajustes + apps + runtimes (Etapa 4)
+│   ├── Win11Debloat.ps1                 <-- Desbloat pós-formatação (Etapa 5)
+│   └── Win11Debloat.zip                 <-- Pacote debloat p/ envio remoto
+├── scripts/bash/                        <-- Scripts Linux (rsync, setup-ssh)
+├── templates/MANIFESTO_TEMPLATE.md      <-- Modelo do manifesto
+└── manifests/                           <-- Manifestos gerados (gitignored 🛡️)
 ```
 
 > 📖 Detalhes completos: `docs/instrucoes.md` dentro do projeto.

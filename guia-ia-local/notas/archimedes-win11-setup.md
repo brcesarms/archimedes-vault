@@ -1,6 +1,8 @@
-# 🪟 Archimedes After-Install Win11 — repositório de pós-instalação do Windows 11
+# 🪟 Archimedes After-Install Win11 — (Consolidado no archimedes-operator)
 
-> Criação: 2026-09-12 · Status: 🟢 ativo · Repo: [brcesarms/archimedes-win11-setup](https://github.com/brcesarms/archimedes-win11-setup)
+> Criação: 2026-09-12 · Atualização: 2026-09-13 · Status: 🪟 consolidado / arquivado · Repo integrado: [`archimedes-operator`](https://github.com/brcesarms/archimedes-operator)
+
+> ⚠️ **Consolidação em 2026-09-13:** Este repositório satélite foi unificado diretamente no repositório principal [`archimedes-operator`](https://github.com/brcesarms/archimedes-operator). Seus scripts de pós-instalação, Win11Debloat e runtimes agora residem nativamente em `~/projetos/archimedes-operator/scripts/powershell/`.
 
 ## 🎯 Objetivo
 
