@@ -92,7 +92,7 @@ agy
 
 No chat da CLI:
 ```markdown
-Leia os arquivos AGENTS.md e prompt-rearquitetura-v7.md para iniciarmos.
+Leia o arquivo AGENTS.md para iniciarmos.
 ```
 
 ### 2. Uso via OpenCode CLI (Compatibilidade)

@@ -67,7 +67,7 @@ archimedes-vault/
 ├── .opencode/                      <-- Configurações da CLI, convenções e skills
 │   ├── agents/                     <-- Subagents (estudante, resumidor, executor)
 │   ├── convencoes/                 <-- 13 Convenções modulares sob demanda
-│   └── skills/                     <-- 17 Skills operacionais
+│   └── skills/                     <-- 19 Skills operacionais
 ├── guia-ia-local/                  <-- 🧠 SISTEMA Archimedes
 │   ├── benchmarks/                 <-- Benchmarks de modelos locais
 │   ├── cerebrum/                   <-- Runbooks, rotinas e prompts do executor
@@ -86,7 +86,7 @@ archimedes-vault/
 ---
 
 ### 🛠️ Skills & Subagents do Projeto
-* **Skills Operacionais (17):** `notas-atomicas` · `auditar-cofre` · `script-linux` · `revisar-scripts` · `criar-moc` · `backup-cofre` · `organizar-cofre` · `gerenciar-links` · `auditar-skills` · `atualizar-ssh` · `orquestrar-tarefa` · `validar-links-md` · `validar-prompt-executor` · `validar-scripts-cofre` · `validar-teia` · `bancada-execucao` · `motor-remoto`.
+* **Skills Operacionais (19):** `notas-atomicas` · `auditar-cofre` · `script-linux` · `revisar-scripts` · `criar-moc` · `backup-cofre` · `organizar-cofre` · `gerenciar-links` · `auditar-skills` · `atualizar-ssh` · `orquestrar-tarefa` · `validar-links-md` · `validar-prompt-executor` · `validar-scripts-cofre` · `validar-teia` · `bancada-execucao` · `motor-remoto` · `curar-codigo` · `consultar-rag`.
 * **Subagents:** 📚 [`estudante`](./.opencode/agents/estudante.md) · 📊 [`resumidor`](./.opencode/agents/resumidor.md) · ⚡ [`executor`](./.opencode/agents/executor.md).
 
 ---
