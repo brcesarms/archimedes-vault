@@ -1,13 +1,13 @@
 ---
 name: notas-atomicas
-description: Criação e edição de notas no estilo do J.A.R.V.I.S.. Use quando for criar, editar ou organizar notas markdown neste cofre — aplica notas atômicas, emojis, links markdown relativos e seção de fontes. Dispara ao ouvir "criar nota", "anotar", "resumo", "to-do notes" e nomes como "nota atômica".
+description: Criação e edição de notas no estilo do Archimedes. Use quando for criar, editar ou organizar notas markdown neste cofre — aplica notas atômicas, emojis, links markdown relativos e seção de fontes. Dispara ao ouvir "criar nota", "anotar", "resumo", "to-do notes" e nomes como "nota atômica".
 compatibility: opencode
 metadata:
   audience: ia-local
   workflow: notas
 ---
 
-# 🗒️ Notas Atômicas do J.A.R.V.I.S.
+# 🗒️ Notas Atômicas do Archimedes
 
 Este cofre segue regras de escrita de notas. Ao criar ou editar qualquer nota, siga sempre estas convenções.
 

@@ -1,6 +1,6 @@
 ---
 name: organizar-cofre
-description: Organização da estrutura de pastas e arquivos do J.A.R.V.I.S.. Use quando o usuário pedir "organizar cofre", "arrumar pastas", "limpar estrutura", "mover notas", "reorganizar" ou quando as notas estiverem em pastas erradas. Mantém a estrutura padrão do cofre.
+description: Organização da estrutura de pastas e arquivos do Archimedes. Use quando o usuário pedir "organizar cofre", "arrumar pastas", "limpar estrutura", "mover notas", "reorganizar" ou quando as notas estiverem em pastas erradas. Mantém a estrutura padrão do cofre.
 compatibility: opencode
 metadata:
   audience: ia-local

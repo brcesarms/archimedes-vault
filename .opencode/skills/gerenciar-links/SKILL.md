@@ -1,13 +1,13 @@
 ---
 name: gerenciar-links
-description: Gerenciamento de links entre notas do J.A.R.V.I.S.. Use quando o usuário pedir "gerenciar links", "conectar notas", "corrigir links", "evitar notas órfãs", "revisar backlinks" ou quando notas estiverem isoladas. Cria conexões entre notas correlatas e corrige links quebrados.
+description: Gerenciamento de links entre notas do Archimedes. Use quando o usuário pedir "gerenciar links", "conectar notas", "corrigir links", "evitar notas órfãs", "revisar backlinks" ou quando notas estiverem isoladas. Cria conexões entre notas correlatas e corrige links quebrados.
 compatibility: opencode
 metadata:
   audience: ia-local
   workflow: notas
 ---
 
-# 🔗 Gerenciar Links do J.A.R.V.I.S.
+# 🔗 Gerenciar Links do Archimedes
 
 Notas atômicas nunca ficam isoladas — conecte-as com notas correlatas e índices.
 

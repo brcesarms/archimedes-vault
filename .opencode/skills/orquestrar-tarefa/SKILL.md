@@ -64,7 +64,7 @@ Após todos os passes:
 ```
 Usuário: "Leia todos os 20 arquivos da pasta X e valide Y"
 
-J.A.R.V.I.S.:
+Archimedes:
 1. Lista arquivos: 20 encontrados
 2. Divide em 3 passes (8+8+4)
 3. Cria .progresso-tarefa.md

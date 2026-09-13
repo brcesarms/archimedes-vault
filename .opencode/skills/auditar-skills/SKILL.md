@@ -1,13 +1,13 @@
 ---
 name: auditar-skills
-description: Auditoria das skills do J.A.R.V.I.S. para identificar quais não estão sendo usadas e são candidatas a exclusão. Use ao ouvir "auditar skills", "quais skills não são usadas", "dieta de skills", "limpar skills", "skills inativas", "revisar skills", "skills mortas". Analisa referências cruzadas, links internos e gera relatório com recomendação de manter/excluir/mergear — nunca exclui sem confirmação explícita.
+description: Auditoria das skills do Archimedes para identificar quais não estão sendo usadas e são candidatas a exclusão. Use ao ouvir "auditar skills", "quais skills não são usadas", "dieta de skills", "limpar skills", "skills inativas", "revisar skills", "skills mortas". Analisa referências cruzadas, links internos e gera relatório com recomendação de manter/excluir/mergear — nunca exclui sem confirmação explícita.
 compatibility: opencode
 metadata:
   audience: ia-local
   workflow: skills
 ---
 
-# 🧼 Auditoria de Skills do J.A.R.V.I.S.
+# 🧼 Auditoria de Skills do Archimedes
 
 O cofre é um segundo cérebro — e skills demais viram peso morto. Esta auditoria mantém as skills **enxutas e usadas**, evitando o over-engineering de regras que ninguém consulta.
 

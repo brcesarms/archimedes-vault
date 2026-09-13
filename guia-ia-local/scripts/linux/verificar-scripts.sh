@@ -37,7 +37,7 @@ echo "🛠️  Scripts encontrados: ${#SCRIPTS[@]}"
 if [ -n "$SHELLCHECK_BIN" ]; then
     echo "🐚 ShellCheck: $($SHELLCHECK_BIN --version | head -1)"
 else
-    echo "⚠️  ShellCheck não encontrado — instalável via: sudo pacman -S shellcheck"
+    echo "⚠️  ShellCheck não encontrado — instalável via: sudo apt install shellcheck (ou brew install shellcheck)"
 fi
 echo "=============================================="
 echo ""

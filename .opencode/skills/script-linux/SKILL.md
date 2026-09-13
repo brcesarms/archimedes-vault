@@ -1,13 +1,13 @@
 ---
 name: script-linux
-description: Criação de scripts bash para Linux no estilo das convenções do J.A.R.V.I.S.. Use ao criar, editar ou revisar qualquer script .sh — aplica shebang, set flags, comentários descritivos, emojis nos logs, chmod +x e verificação de exit code. Dispara ao ouvir "criar script", "script bash", "automação", ".sh".
+description: Criação de scripts bash para Linux no estilo das convenções do Archimedes. Use ao criar, editar ou revisar qualquer script .sh — aplica shebang, set flags, comentários descritivos, emojis nos logs, chmod +x e verificação de exit code. Dispara ao ouvir "criar script", "script bash", "automação", ".sh".
 compatibility: opencode
 metadata:
   audience: ia-local
   workflow: scripts
 ---
 
-# 🐧 Scripts Linux do J.A.R.V.I.S.
+# 🐧 Scripts Linux do Archimedes
 
 Ao criar ou editar scripts bash para este cofre, siga sempre as convenções abaixo.
 
