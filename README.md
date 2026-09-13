@@ -61,7 +61,8 @@ archimedes-vault/                   <-- Raiz do seu repositório / cofre princip
 │   │   ├── rotinas/                <-- Runbooks atômicos (.md)
 │   │   └── systemd/                <-- Units de automação (.service e .timer)
 │   ├── docker/                     <-- Serviços containerizados (docker-compose)
-│   ├── dotfiles/                   <-- Configurações de shell e aliases (.aliases, .bashrc, .prompt)
+│   ├── dotfiles/                   <-- Config de shell e SSH template (.ssh-config, .bashrc)
+│   ├── instintos/                  <-- 🧠 Micro-aprendizados atômicos (ativos/ e promovidos/)
 │   ├── notas/                      <-- Notas atômicas de manutenção do sistema
 │   ├── perfis/                     <-- Perfis de hardware (alienware, geekom, acer-paula)
 │   └── scripts/                    <-- Scripts operacionais de infraestrutura
@@ -74,6 +75,7 @@ archimedes-vault/                   <-- Raiz do seu repositório / cofre princip
 ├── .gitignore                      <-- Regras de exclusão do Git
 ├── .gitmodules                     <-- Mapeamento de submódulos Git
 ├── AGENTS.md                       <-- Manual de regras, segurança e identidade do Archimedes 🏛️
+├── bootstrap.sh                    <-- 🚀 Setup pós-formatação (< 2 min)
 ├── opencode.json                   <-- Configuração de compatibilidade com a OpenCode CLI
 └── README.md                       <-- Documentação principal do repositório no GitHub
 ```

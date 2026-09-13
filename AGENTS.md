@@ -72,7 +72,7 @@ archimedes-vault/
 │   ├── benchmarks/                 <-- Benchmarks de modelos locais
 │   ├── cerebrum/                   <-- Runbooks, rotinas e prompts do executor
 │   ├── docker/                     <-- Docker Compose e serviços
-│   ├── dotfiles/                   <-- Configurações de shell e aliases
+│   ├── dotfiles/                   <-- Config de shell e SSH template (ssh-config)
 │   ├── instintos/                  <-- 🧠 Micro-aprendizados atômicos (ativos/ e promovidos/)
 │   ├── notas/                      <-- Notas técnicas e historico/
 │   ├── perfis/                     <-- Perfis de hardware (alienware, geekom, acer-paula)
@@ -80,6 +80,7 @@ archimedes-vault/
 ├── concurseiro/                    <-- 📚 ESTUDOS: Concursos públicos
 ├── t.i/                            <-- 📚 ESTUDOS: T.I., redes e certificações
 ├── AGENTS.md                       <-- Manual de regras e identidade do Archimedes 🏛️
+├── bootstrap.sh                    <-- 🚀 Setup pós-formatação (< 2 min)
 ├── opencode.json                   <-- Configurações do OpenCode CLI
 └── README.md                       <-- Documentação principal do repositório
 ```

@@ -211,7 +211,7 @@ if [ "$INSTALL_MODE" = "--full" ]; then
         fi
     done
 
-    warn "Modelos custom (-16k) são gerados pelo setup.sh: bash ~/archimedes-vault/setup.sh"
+    warn "Modelos custom (-16k) dependem de perfis de hardware — veja guia-ia-local/perfis/"
 
     success "Modelos verificados"
 else
@@ -300,8 +300,8 @@ echo -e "🚀 ${YELLOW}Para começar:${NC}"
 echo -e "  ${CYAN}cd ~/archimedes-vault${NC}"
 echo -e "  ${CYAN}agy${NC}  # ou opencode"
 echo ""
-echo -e "🛠️  ${YELLOW}Compilar modelos custom (-16k) e configurar o ambiente:${NC}"
-echo -e "  ${CYAN}bash ~/archimedes-vault/setup.sh${NC}"
+echo -e "🚀  ${YELLOW}Em máquina recém-formatada, rode primero o bootstrap:${NC}"
+echo -e "  ${CYAN}cd ~/archimedes-vault && ./bootstrap.sh${NC}"
 echo ""
 echo -e "🔄 ${YELLOW}Trocar de modelo (aliases prontos):${NC}"
 echo -e "  ${CYAN}usar-coder${NC}   → Qwen 2.5 Coder 7B (16k)   [usar-coder-v1.1.sh]"
