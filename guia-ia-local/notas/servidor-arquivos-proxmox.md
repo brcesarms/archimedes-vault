@@ -4,7 +4,7 @@
 
 ## 🎯 Resumo
 
-Servidor de arquivos dedicado criado como **container LXC (privileged) no Proxmox GEEKOM** (`10.0.0.3`) para servir **Samba (SMB) + NFS + SFTP** na rede local. É o **destino central dos backups robocopy do archimedes-orquestrador**.
+Servidor de arquivos dedicado criado como **container LXC (privileged) no Proxmox GEEKOM** (`10.0.0.3`) para servir **Samba (SMB) + NFS + SFTP** na rede local. É o **destino central dos backups robocopy do archimedes-operator**.
 
 ---
 
@@ -32,7 +32,7 @@ Servidor de arquivos dedicado criado como **container LXC (privileged) no Proxmo
 
 | Share SMB | Caminho | Uso |
 | :--- | :--- | :--- |
-| `\\10.0.0.4\backup` | `/srv/arquivos/backup` | 🎯 **Destino robocopy** (archimedes-orquestrador) |
+| `\\10.0.0.4\backup` | `/srv/arquivos/backup` | 🎯 **Destino robocopy** (archimedes-operator) |
 | `\\10.0.0.4\arquivos` | `/srv/arquivos/documentos` | Documentos e uso geral |
 
 **Prefixos de acesso:**
@@ -55,7 +55,7 @@ Servidor de arquivos dedicado criado como **container LXC (privileged) no Proxmo
 
 ---
 
-## 🔄 Integração com o archimedes-orquestrador
+## 🔄 Integração com o archimedes-operator
 
 O `backup-robocopy.ps1` usa o parâmetro `--destino` (storage central UNC). Apontar para:
 

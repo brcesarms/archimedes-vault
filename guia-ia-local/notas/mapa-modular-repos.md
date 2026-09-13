@@ -12,7 +12,7 @@ caminho absoluto** — nunca por cópia de código.
 
 | Repo | Papel | Motor principal | Dono de |
 | :--- | :--- | :--- | :--- |
-| 🏗️ [`archimedes-orquestrador`](https://github.com/brcesarms/archimedes-orquestrador) | Fluxo completo de bancada (inventário → backup → manifesto → pos/debloat) | Python + PowerShell | `orquestrador.py` · `inventario.ps1` · `setup-ssh-pri.ps1` · `menu.py` · template manifesto |
+| 🏗️ [`archimedes-operator`](https://github.com/brcesarms/archimedes-operator) | Fluxo completo de bancada (inventário → backup → manifesto → pos/debloat) | Python + PowerShell | `orquestrador.py` · `inventario.ps1` · `setup-ssh-pri.ps1` · `menu.py` · template manifesto |
 | 💾 [`archimedes-backup`](https://github.com/brcesarms/archimedes-backup) | Backup dedicado (standalone Linux+Windows) | Python + rsync + robocopy | `backup-robocopy.ps1` · `backup-navegador.ps1` · motores rsync · perfis |
 | 🪟 [`archimedes-win11-setup`](https://github.com/brcesarms/archimedes-win11-setup) | Pós-instalação + desbloat do Windows 11 | PowerShell | `pos-instalacao.ps1` · `Win11Debloat.*` |
 
@@ -20,7 +20,7 @@ caminho absoluto** — nunca por cópia de código.
 
 ```text
 ┌─────────────────────────┐
-│ 🏗️ archimedes-orquestrador      │  ← único motor do FLUXO da bancada
+│ 🏗️ archimedes-operator      │  ← único motor do FLUXO da bancada
 │   orquestrador.py        │
 └──────────┬──────────────┘
            │ referencia, NUNCA copia

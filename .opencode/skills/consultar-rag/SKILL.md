@@ -32,7 +32,7 @@ O Archimedes utiliza o [`archimedes-rag`](https://github.com/brcesarms/archimede
 
 3. **Reindexar Manualmente um Projeto:**
    ```bash
-   rag index --project-dir ~/projetos/archimedes-orquestrador
+   rag index --project-dir ~/projetos/archimedes-operator
    ```
 
 4. **Verificar Status e Chunks do Projeto Atual:**

@@ -4,7 +4,7 @@
 
 ## 🎯 Princípio
 
-Adotar a arquitetura do archimedes-orquestrador **de forma seletiva**: camadas bem definidas e testes para lógica complexa — **sem** reescrever scripts que já resolvem bem em bash.
+Adotar a arquitetura do archimedes-operator **de forma seletiva**: camadas bem definidas e testes para lógica complexa — **sem** reescrever scripts que já resolvem bem em bash.
 
 ## 🧭 As 3 ferramentas e quando usar
 
@@ -42,7 +42,7 @@ Adotar a arquitetura do archimedes-orquestrador **de forma seletiva**: camadas b
 
 ## 🔌 Reuso do motor remoto
 
-- Operações remotas (SSH/SFTP/inventário/backup/manifesto) **referenciam** o motor do `archimedes-orquestrador` — ver skill 🔌 `motor-remoto`.
+- Operações remotas (SSH/SFTP/inventário/backup/manifesto) **referenciam** o motor do `archimedes-operator` — ver skill 🔌 `motor-remoto`.
 - ❌ Nunca duplicar `orquestrador.py` ou `.ps1` no vault.
 
 ## ⚠️ Exceção de nomenclatura
@@ -55,4 +55,4 @@ Adotar a arquitetura do archimedes-orquestrador **de forma seletiva**: camadas b
 - [Decisão de Arquitetura Python/PowerShell](./decisao-arquitetura-python-powershell-2026-09-11.md)
 - [Skill motor-remoto](../../.opencode/skills/motor-remoto/SKILL.md)
 - [Skill validar-links-md](../../.opencode/skills/validar-links-md/SKILL.md)
-- [Projeto bancada no GitHub](https://github.com/brcesarms/archimedes-orquestrador)
+- [Projeto bancada no GitHub](https://github.com/brcesarms/archimedes-operator)

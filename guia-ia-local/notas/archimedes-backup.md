@@ -28,9 +28,9 @@ Arquitetura **controller + agent**: Python só no orquestrador; motores **nativo
 └── logs/                     <-- Logs de execução (gitignored 🛡️)
 ```
 
-## 🔀 Relação com o archimedes-orquestrador
+## 🔀 Relação com o archimedes-operator
 
-- O `backup-robocopy.ps1` **saiu** de `archimedes-orquestrador/scripts/powershell/` (2026-09-12).
+- O `backup-robocopy.ps1` **saiu** de `archimedes-operator/scripts/powershell/` (2026-09-12).
 - O `orquestrador.py` da bancada referencia **caminho absoluto** `~/projetos/archimedes-backup/windows/backup-robocopy.ps1` — sem duplicar código.
 
 ## 🔗 Relação com o ecossistema Archimedes

@@ -65,5 +65,5 @@ Análise concluída junto com o Archimedes (Validador de Boas Práticas).
 
 ## 🔗 Fontes
 
-- [Projeto bancada no GitHub](https://github.com/brcesarms/archimedes-orquestrador)
+- [Projeto bancada no GitHub](https://github.com/brcesarms/archimedes-operator)
 - [Nota: Proxmox GEEKOM — Setup e Acesso SSH à VM Windows](./proxmox-geekom-vm-windows.md)

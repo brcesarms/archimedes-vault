@@ -11,7 +11,7 @@ alias cofre='cd ~/archimedes-vault'
 alias cofre-status='cat ~/archimedes-vault/guia-ia-local/DEPENDENCIAS.md'
 
 # 🏗️ Projeto Bancada
-alias bancada='~/projetos/archimedes-orquestrador/.venv/bin/python3 ~/projetos/archimedes-orquestrador/scripts/python/menu.py'
+alias bancada='~/projetos/archimedes-operator/.venv/bin/python3 ~/projetos/archimedes-operator/scripts/python/menu.py'
 
 # 🦙 Ollama - Comandos úteis
 alias ollama-list='ollama list'

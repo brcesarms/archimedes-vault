@@ -10,7 +10,7 @@
 /home/brn/
 ├── archimedes-vault/       <-- 🏛️ Cofre Obsidian (histórico de conhecimento) — NÃO MEXER
 ├── projetos/               <-- 📂 PASTA CENTRAL DE PROJETOS
-│   ├── archimedes-orquestrador/    <-- ✅ Repo GitHub: brcesarms/archimedes-orquestrador
+│   ├── archimedes-operator/    <-- ✅ Repo GitHub: brcesarms/archimedes-operator
 │   ├── archimedes-backup/  <-- ✅ Repo GitHub: brcesarms/archimedes-backup (backup único: robocopy + rsync)
 │   ├── archimedes-win11-setup/ <-- ✅ Repo GitHub: brcesarms/archimedes-win11-setup (pós-instalação + desbloat Win11)
 │   ├── usb-bootavel-tui/    <-- ✅ Repo GitHub: brcesarms/usb-bootavel-tui (criador de pendrive bootável TUI)
@@ -24,17 +24,17 @@
 | Regra | Detalhe |
 | :--- | :--- |
 | **Localização** | Todo novo projeto/repo clonado ou criado → `~/projetos/<nome>/` |
-| **Nome da pasta** | `kebab-case`, minúsculo, sem acento (ex: `archimedes-orquestrador`) |
+| **Nome da pasta** | `kebab-case`, minúsculo, sem acento (ex: `archimedes-operator`) |
 | **Vault é sagrado** | `~/archimedes-vault` NÃO move — caminhos absolutos fixos (AGENTS.md, opencode, submódulos) |
 | **Novo repo GitHub** | Criar pasta em `~/projetos/`, clonar/nascer lá, push direto |
 | **Migrações** | Sempre solicitar aprovação antes de mover pastas existentes |
-| **🔗 Interligação entre repos** | Repositórios **NUNCA são silos**: documentação que afete outro projeto DEVE ser referenciada cruzadamente (guia de preparação no `archimedes-backup` ↔ vault/skills ↔ archimedes-orquestrador). Ao criar/editar doc, procure onde ela deveria ser linkada nos demais repos. |
+| **🔗 Interligação entre repos** | Repositórios **NUNCA são silos**: documentação que afete outro projeto DEVE ser referenciada cruzadamente (guia de preparação no `archimedes-backup` ↔ vault/skills ↔ archimedes-operator). Ao criar/editar doc, procure onde ela deveria ser linkada nos demais repos. |
 
 ## 🗺️ Mapa de Projetos Atuais
 
 | Projeto | Caminho Local | Repo GitHub | Visibilidade |
 | :--- | :--- | :--- | :--- |
-| archimedes-orquestrador | `~/projetos/archimedes-orquestrador/` | `brcesarms/archimedes-orquestrador` | 🌐 Público |
+| archimedes-operator | `~/projetos/archimedes-operator/` | `brcesarms/archimedes-operator` | 🌐 Público |
 | archimedes-backup | `~/projetos/archimedes-backup/` | `brcesarms/archimedes-backup` | 🌐 Público |
 | archimedes-win11-setup | `~/projetos/archimedes-win11-setup/` | `brcesarms/archimedes-win11-setup` | 🌐 Público |
 | usb-bootavel-tui | `~/projetos/usb-bootavel-tui/` | `brcesarms/usb-bootavel-tui` | 🌐 Público |
