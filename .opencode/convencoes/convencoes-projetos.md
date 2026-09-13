@@ -12,7 +12,8 @@
 ├── projetos/               <-- 📂 PASTA CENTRAL DE PROJETOS
 │   ├── archimedes-orquestrador/    <-- ✅ Repo GitHub: brcesarms/archimedes-orquestrador
 │   ├── archimedes-backup/  <-- ✅ Repo GitHub: brcesarms/archimedes-backup (backup único: robocopy + rsync)
-│   └── archimedes-win11-setup/ <-- ✅ Repo GitHub: brcesarms/archimedes-win11-setup (pós-instalação + desbloat Win11)
+│   ├── archimedes-win11-setup/ <-- ✅ Repo GitHub: brcesarms/archimedes-win11-setup (pós-instalação + desbloat Win11)
+│   └── usb-bootavel-tui/    <-- ✅ Repo GitHub: brcesarms/usb-bootavel-tui (criador de pendrive bootável TUI)
 └── ...pastas padrão...     <-- Documentos, Downloads, etc.
 ```
 
@@ -34,6 +35,7 @@
 | archimedes-orquestrador | `~/projetos/archimedes-orquestrador/` | `brcesarms/archimedes-orquestrador` | 🌐 Público |
 | archimedes-backup | `~/projetos/archimedes-backup/` | `brcesarms/archimedes-backup` | 🌐 Público |
 | archimedes-win11-setup | `~/projetos/archimedes-win11-setup/` | `brcesarms/archimedes-win11-setup` | 🌐 Público |
+| usb-bootavel-tui | `~/projetos/usb-bootavel-tui/` | `brcesarms/usb-bootavel-tui` | 🌐 Público |
 
 ## ⚙️ Fluxo para Novo Projeto
 
