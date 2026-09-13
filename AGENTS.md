@@ -67,12 +67,13 @@ archimedes-vault/
 ├── .opencode/                      <-- Configurações da CLI, convenções e skills
 │   ├── agents/                     <-- Subagents (estudante, resumidor, executor)
 │   ├── convencoes/                 <-- 13 Convenções modulares sob demanda
-│   └── skills/                     <-- 19 Skills operacionais
+│   └── skills/                     <-- 20 Skills operacionais
 ├── guia-ia-local/                  <-- 🧠 SISTEMA Archimedes
 │   ├── benchmarks/                 <-- Benchmarks de modelos locais
 │   ├── cerebrum/                   <-- Runbooks, rotinas e prompts do executor
 │   ├── docker/                     <-- Docker Compose e serviços
 │   ├── dotfiles/                   <-- Configurações de shell e aliases
+│   ├── instintos/                  <-- 🧠 Micro-aprendizados atômicos (ativos/ e promovidos/)
 │   ├── notas/                      <-- Notas técnicas e historico/
 │   ├── perfis/                     <-- Perfis de hardware (alienware, geekom, acer-paula)
 │   └── scripts/                    <-- Scripts operacionais (linux/, python/, windows/)
@@ -86,7 +87,7 @@ archimedes-vault/
 ---
 
 ### 🛠️ Skills & Subagents do Projeto
-* **Skills Operacionais (19):** `notas-atomicas` · `auditar-cofre` · `script-linux` · `revisar-scripts` · `criar-moc` · `backup-cofre` · `organizar-cofre` · `gerenciar-links` · `auditar-skills` · `atualizar-ssh` · `orquestrar-tarefa` · `validar-links-md` · `validar-prompt-executor` · `validar-scripts-cofre` · `validar-teia` · `bancada-execucao` · `motor-remoto` · `curar-codigo` · `consultar-rag`.
+* **Skills Operacionais (20):** `notas-atomicas` · `auditar-cofre` · `script-linux` · `revisar-scripts` · `criar-moc` · `backup-cofre` · `organizar-cofre` · `gerenciar-links` · `auditar-skills` · `atualizar-ssh` · `orquestrar-tarefa` · `validar-links-md` · `validar-prompt-executor` · `validar-scripts-cofre` · `validar-teia` · `bancada-execucao` · `motor-remoto` · `curar-codigo` · `consultar-rag` · `cultivar-instintos`.
 * **Subagents:** 📚 [`estudante`](./.opencode/agents/estudante.md) · 📊 [`resumidor`](./.opencode/agents/resumidor.md) · ⚡ [`executor`](./.opencode/agents/executor.md).
 
 ---
