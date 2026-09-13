@@ -8,14 +8,12 @@
 
 ```text
 /home/brn/
-├── archimedes-vault/       <-- 🏛️ Cofre Obsidian (histórico de conhecimento) — NÃO MEXER
+├── archimedes-vault/       <-- 🏛️ Cofre Obsidian (Governança, Regras, 19 Skills) — NÃO MEXER
 ├── projetos/               <-- 📂 PASTA CENTRAL DE PROJETOS
-│   ├── archimedes-operator/    <-- ✅ Repo GitHub: brcesarms/archimedes-operator
-│   ├── archimedes-backup/  <-- ✅ Repo GitHub: brcesarms/archimedes-backup (backup único: robocopy + rsync)
-│   ├── archimedes-win11-setup/ <-- ✅ Repo GitHub: brcesarms/archimedes-win11-setup (pós-instalação + desbloat Win11)
-│   ├── usb-bootavel-tui/    <-- ✅ Repo GitHub: brcesarms/usb-bootavel-tui (criador de pendrive bootável TUI)
-│   ├── archimedes-rag/      <-- ✅ Repo GitHub: brcesarms/archimedes-rag (RAG local com AST e LanceDB para OpenCode CLI)
-│   └── archimedes-doctor/   <-- ✅ Repo GitHub: brcesarms/archimedes-doctor (Gerador de testes com Self-Healing loop)
+│   ├── archimedes-operator/    <-- 👷‍♂️ Braço Mecânico (Bancada, Backup Robocopy e Setup Win11)
+│   ├── archimedes-rag/         <-- 🔍 Memória Semântica Local (LanceDB + AST)
+│   ├── archimedes-doctor/      <-- 🩺 Hospital de Código (Pytest e Loop de Auto-Cura)
+│   └── usb-bootavel-tui/       <-- 🔌 Criador de pendrive bootável TUI
 └── ...pastas padrão...     <-- Documentos, Downloads, etc.
 ```
 
