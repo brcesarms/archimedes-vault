@@ -91,6 +91,7 @@ cd ~/archimedes-vault && ./bootstrap.sh
 | :--- | :--- |
 | `gh` não autenticado → clone falha | Rodar `gh auth login` antes do clone com PAT do Bitwarden |
 | Submódulos não clonados | `git submodule update --init --recursive` |
+| `bootstrap.sh` acusa submódulo ausente indevidamente | `.git` de submódulo é arquivo pointer — a validação usa `-e` (bug já corrigido) |
 | Teclado Bluetooth não funciona no LUKS | Usar teclado do laptop (embutido) ou USB/dongle 2.4GHz |
 | Distro não reconhecida no install.sh | Adicionar ID ao case em `guia-ia-local/install.sh` / `bootstrap.sh` |
 
