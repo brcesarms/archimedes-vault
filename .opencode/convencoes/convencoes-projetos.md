@@ -13,7 +13,8 @@
 │   ├── archimedes-orquestrador/    <-- ✅ Repo GitHub: brcesarms/archimedes-orquestrador
 │   ├── archimedes-backup/  <-- ✅ Repo GitHub: brcesarms/archimedes-backup (backup único: robocopy + rsync)
 │   ├── archimedes-win11-setup/ <-- ✅ Repo GitHub: brcesarms/archimedes-win11-setup (pós-instalação + desbloat Win11)
-│   └── usb-bootavel-tui/    <-- ✅ Repo GitHub: brcesarms/usb-bootavel-tui (criador de pendrive bootável TUI)
+│   ├── usb-bootavel-tui/    <-- ✅ Repo GitHub: brcesarms/usb-bootavel-tui (criador de pendrive bootável TUI)
+│   └── agente-rag-opencode/ <-- ✅ Agente RAG local com AST e LanceDB para OpenCode CLI
 └── ...pastas padrão...     <-- Documentos, Downloads, etc.
 ```
 
@@ -36,6 +37,7 @@
 | archimedes-backup | `~/projetos/archimedes-backup/` | `brcesarms/archimedes-backup` | 🌐 Público |
 | archimedes-win11-setup | `~/projetos/archimedes-win11-setup/` | `brcesarms/archimedes-win11-setup` | 🌐 Público |
 | usb-bootavel-tui | `~/projetos/usb-bootavel-tui/` | `brcesarms/usb-bootavel-tui` | 🌐 Público |
+| agente-rag-opencode | `~/projetos/agente-rag-opencode/` | `brcesarms/agente-rag-opencode` | 🌐 Público |
 
 ## ⚙️ Fluxo para Novo Projeto
 
