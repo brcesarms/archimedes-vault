@@ -223,7 +223,8 @@ FAIL=0
 
 # Submódulos
 for mod in t.i concurseiro; do
-    if [ -d "${COFRE_DIR}/${mod}/.git" ]; then
+    # ⚠️ .git em submódulo é ARQUIVO pointer (não diretório) — use -e, não -d
+    if [ -e "${COFRE_DIR}/${mod}/.git" ]; then
         success "Submódulo $mod OK"
     else
         warn "Submódulo $mod ausente — rode: git submodule update --init --recursive"
