@@ -36,6 +36,7 @@
 | **archimedes-rag** | `~/projetos/archimedes-rag/` | `brcesarms/archimedes-rag` | 🔍 Memória Semântica Local (LanceDB + AST) |
 | **archimedes-doctor** | `~/projetos/archimedes-doctor/` | `brcesarms/archimedes-doctor` | 🩺 Centro Médico de Código & Auto-Cura (Pytest) |
 | **usb-bootavel-tui** | `~/projetos/usb-bootavel-tui/` | `brcesarms/usb-bootavel-tui` | 🔌 Utilitário TUI de criação de pendrive bootável |
+| **win-toolbox-tui** | `~/projetos/win-toolbox-tui/` | `brcesarms/win-toolbox-tui` | 🪟 Caixa de Ferramentas TUI & Pós-Instalação Exclusiva Windows 11 |
 
 ## ⚙️ Fluxo para Novo Projeto
 
