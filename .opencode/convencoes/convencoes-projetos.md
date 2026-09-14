@@ -37,6 +37,7 @@
 | **archimedes-doctor** | `~/projetos/archimedes-doctor/` | `brcesarms/archimedes-doctor` | 🩺 Centro Médico de Código & Auto-Cura (Pytest) |
 | **usb-bootavel-tui** | `~/projetos/usb-bootavel-tui/` | `brcesarms/usb-bootavel-tui` | 🔌 Utilitário TUI de criação de pendrive bootável |
 | **win-toolbox-tui** | `~/projetos/win-toolbox-tui/` | `brcesarms/win-toolbox-tui` | 🪟 Caixa de Ferramentas TUI & Pós-Instalação Exclusiva Windows 11 |
+| **linux-toolbox-tui** | `~/projetos/linux-toolbox-tui/` | `brcesarms/linux-toolbox-tui` | 🐧 Caixa de Ferramentas TUI & Pós-Instalação para Linux (apt/dnf/pacman) |
 
 ## ⚙️ Fluxo para Novo Projeto
 
