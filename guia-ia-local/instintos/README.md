@@ -31,7 +31,8 @@ novo (0.3-0.5) → candidato (0.5-0.7) → promovido (≥0.7 + 3x) → skill cri
 | :--- | :--- | :--- |
 | Criar notas no molde atômico | `notas-atomicas` | ✅ promovido |
 | Auditar saúde do cofre | `auditar-cofre` | ✅ promovido |
-| Validar scripts antes de entregar | `revisar-scripts` / `validar-scripts-cofre` | ✅ promovido |
+| Validar scripts antes de entregar | `revisar-scripts` / `orquestrador-archimedes` | ✅ promovido |
+| Consolidar skills redundantes | `orquestrador-archimedes` | ✅ promovido |
 
 > Inclua citações completas a estes exemplos quando o Bruno perguntar "quais instintos já viram skill?".
 

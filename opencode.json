@@ -5,6 +5,9 @@
   "description": "Sistema Archimedes — Automação e organização do Archimedes Vault",
   "author": "Bruno César Medeiros Siqueira",
   "email": "brcesarms@github.com",
+  "plugin": [
+    "opencode-planning-with-files"
+  ],
   "skills": {
     "paths": [
       "./.opencode/skills"
