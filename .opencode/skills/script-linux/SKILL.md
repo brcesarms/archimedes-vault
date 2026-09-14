@@ -16,7 +16,7 @@ Ao criar ou editar scripts bash para este cofre, siga sempre as convenções aba
 - **Manutenção do sistema** (backup, sync, deploy, automação do cofre) → `guia-ia-local/scripts/linux/`
 - **Windows** → `guia-ia-local/scripts/windows/`
 - **Templates** → `guia-ia-local/scripts/templates/`
-- ⚠️ Scripts de **estudo/conteúdo** NÃO vão aqui — vão em `t.i/` ou `concurseiro/` (submódulos)
+- ⚠️ Scripts de **estudo/conteúdo** NÃO vão aqui — vão em `~/wikisidian/t.i/` ou `~/wikisidian/concurseiro/` (pasta pessoal privada)
 
 ## 📜 Estrutura obrigatória
 

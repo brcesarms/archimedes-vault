@@ -59,7 +59,7 @@ Você é o **Archimedes** — assistente de IA focado em automação, organizaç
 
 ### 📁 Estrutura do Vault (`archimedes-vault`)
 * 🧠 **SISTEMA** (`guia-ia-local/`): Scripts, runbooks, benchmarks, perfis e automações do Archimedes.
-* 📚 **ESTUDOS PESSOAIS** (`t.i/`, `concurseiro/`): Conteúdo pessoal do usuário — **NÃO alterar sem solicitação direta**.
+* 🔒 **ESTUDOS PESSOAIS** (`~/wikisidian/`): Conteúdo pessoal do usuário (`t.i/`, `concurseiro/`) — **fora do repositório público** e **NÃO alterar sem solicitação direta**.
 * 🗺️ **Sincronização do Mapa:** Qualquer nova pasta ou skill exige atualização imediata desta árvore e do `README.md`.
 
 ```text
@@ -67,7 +67,7 @@ archimedes-vault/
 ├── .opencode/                      <-- Configurações da CLI, convenções e skills
 │   ├── agents/                     <-- Subagents (estudante, resumidor, executor)
 │   ├── convencoes/                 <-- 13 Convenções modulares sob demanda
-│   └── skills/                     <-- 20 Skills operacionais
+│   └── skills/                     <-- 18 Skills operacionais
 ├── guia-ia-local/                  <-- 🧠 SISTEMA Archimedes
 │   ├── benchmarks/                 <-- Benchmarks de modelos locais
 │   ├── cerebrum/                   <-- Runbooks, rotinas e prompts do executor
@@ -77,8 +77,6 @@ archimedes-vault/
 │   ├── notas/                      <-- Notas técnicas e historico/
 │   ├── perfis/                     <-- Perfis de hardware (alienware, geekom, acer-paula)
 │   └── scripts/                    <-- Scripts operacionais (linux/, python/, windows/)
-├── concurseiro/                    <-- 📚 ESTUDOS: Concursos públicos
-├── t.i/                            <-- 📚 ESTUDOS: T.I., redes e certificações
 ├── AGENTS.md                       <-- Manual de regras e identidade do Archimedes 🏛️
 ├── bootstrap.sh                    <-- 🚀 Setup pós-formatação (< 2 min)
 ├── opencode.json                   <-- Configurações do OpenCode CLI
@@ -88,7 +86,7 @@ archimedes-vault/
 ---
 
 ### 🛠️ Skills & Subagents do Projeto
-* **Skills Operacionais (20):** `notas-atomicas` · `auditar-cofre` · `script-linux` · `revisar-scripts` · `criar-moc` · `backup-cofre` · `organizar-cofre` · `gerenciar-links` · `auditar-skills` · `atualizar-ssh` · `orquestrar-tarefa` · `validar-links-md` · `validar-prompt-executor` · `validar-scripts-cofre` · `validar-teia` · `bancada-execucao` · `motor-remoto` · `curar-codigo` · `consultar-rag` · `cultivar-instintos`.
+* **Skills Operacionais (18):** `notas-atomicas` · `auditar-cofre` · `script-linux` · `revisar-scripts` · `criar-moc` · `backup-cofre` · `organizar-cofre` · `gerenciar-links` · `auditar-skills` · `atualizar-ssh` · `orquestrador-archimedes` · `validar-links-md` · `validar-prompt-executor` · `validar-teia` · `motor-remoto` · `curar-codigo` · `consultar-rag` · `cultivar-instintos`.
 * **Subagents:** 📚 [`estudante`](./.opencode/agents/estudante.md) · 📊 [`resumidor`](./.opencode/agents/resumidor.md) · ⚡ [`executor`](./.opencode/agents/executor.md).
 
 ---

@@ -103,7 +103,7 @@ Cada atalho:
 | `notas/` | Notas de manutenção do sistema |
 | `utils/` | Utilitários |
 
-> 📂 **`t.i/` e `concurseiro/`** NÃO ficam aqui — são **submódulos git** na raiz do cofre, cada um com repo próprio no GitHub. Ver [AGENTS.md](../AGENTS.md).
+> 🔒 **`t.i/` e `concurseiro/`** NÃO ficam aqui — estão em **`~/wikisidian/`** (fora do repositório público), cada um com repo próprio no GitHub. Ver [AGENTS.md](../AGENTS.md).
 
 ---
 

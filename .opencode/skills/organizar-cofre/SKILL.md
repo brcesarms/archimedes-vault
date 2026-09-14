@@ -26,8 +26,12 @@ archimedes-vault/              # repo: brcesarms/archimedes-vault
 │   ├── notas/                 #   Notas atômicas de manutenção do sistema
 │   ├── perfis/                #   Perfis de hardware
 │   └── dotfiles/              #   Configurações de shell e aliases
-├── concurseiro/               # 📂 Submódulo Git pessoal (privado)
-└── t.i/                       # 📂 Submódulo Git pessoal (público)
+└── README.md                  # Documentação principal (NÃO mover)
+
+# Fora do repositório (privado)
+~/wikisidian/
+├── concurseiro/               # 📂 ESTUDOS pessoais (concursos)
+└── t.i/                       # 📂 ESTUDOS pessoais (T.I., redes)
 ```
 
 ## 🔍 Como organizar
@@ -44,8 +48,8 @@ archimedes-vault/              # repo: brcesarms/archimedes-vault
 |---------------------|------------------|
 | Nota de manutenção do sistema | `guia-ia-local/notas/` |
 | Script de manutenção do sistema | `guia-ia-local/scripts/linux/` ou `guia-ia-local/scripts/windows/` |
-| Conteúdo de concurso | `concurseiro/` (submódulo) |
-| Conteúdo de TI / estudos | `t.i/` (submódulo) |
+| Conteúdo de concurso | `~/wikisidian/concurseiro/` |
+| Conteúdo de TI / estudos | `~/wikisidian/t.i/` |
 | Utilitário/config do sistema | `guia-ia-local/utils/` |
 | Guia, setup, perfil | `guia-ia-local/` |
 

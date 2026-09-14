@@ -20,7 +20,7 @@ status: pronto
 
 Auditoria semanal de saúde do **sistema do cofre** (raiz + `guia-ia-local/` + `.opencode/`): detecta links quebrados, notas órfãs e propõe novos MOCs. Mantém o cofre consistente e conectado. Você executa os **4 passos mecânicos** abaixo e gera o relatório.
 
-> ⚠️ **ESCOPO IMPORTANTE:** NÃO auditar os submódulos `t.i/` e `concurseiro/` (conteúdo pessoal — geram muito ruído de links relativos/planejados). Focar **somente** no sistema:
+> ⚠️ **ESCOPO IMPORTANTE:** NÃO auditar os estudos pessoais (`~/wikisidian/` — conteúdo privado, fora do repositório, geram muito ruído de links relativos/planejados). Focar **somente** no sistema:
 > - `~/archimedes-vault/*.md` (raiz)
 > - `~/archimedes-vault/guia-ia-local/**`
 > - `~/archimedes-vault/.opencode/**`
@@ -37,7 +37,7 @@ grep -rEn --include="*.md" '\[[^]]*\]\([^)#]*\)' ~/archimedes-vault/*.md ~/archi
 
 **VALIDE cada caminho listado:** considere apenas links que sejam **relativos ao cofre ou ao sistema**. Ignore:
 - URLs externas (`http`, `mailto`, `github.com/...`)
-- Links para submódulos (`t.i/`, `concurseiro/`, `t.i...`)
+- Links para estudos pessoais (`~/wikisidian/...`)
 - Links para notas **planejadas** (fazem parte do workflow de notas atômicas)
 - Caminhos de scripts/documentação que existam em disco
 

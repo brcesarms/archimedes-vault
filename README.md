@@ -41,7 +41,7 @@ O **Archimedes** é instruído a manter o mapa da árvore de diretórios (`READM
 
 ### 4. Isolamento do Cofre
 - ⚙️ **SISTEMA (`guia-ia-local/`):** Área restrita para automação, utilitários, scripts e logs.
-- 📚 **ESTUDOS (`concurseiro/`, `t.i/`):** Diretórios de uso pessoal do usuário. O código de automação do sistema **nunca** modifica arquivos nestas pastas.
+- 📚 **ESTUDOS PESSOAIS (`~/wikisidian/`):** Diretórios de uso pessoal do usuário (`t.i/`, `concurseiro/`), **fora deste repositório público**. O código de automação do sistema **nunca** modifica arquivos nestas pastas.
 
 ---
 
@@ -69,11 +69,8 @@ archimedes-vault/                   <-- Raiz do seu repositório / cofre princip
 │       ├── linux/                  <-- Scripts bash e suite de validação em validacoes/
 │       ├── python/                 <-- Scripts Python p/ parsing pesado e orquestração (pytest em tests/)
 │       └── windows/                <-- Scripts PowerShell
-├── concurseiro/                    <-- 📚 ESTUDOS: Suas notas pessoais de estudo para concursos
-├── t.i/                            <-- 📚 ESTUDOS: Suas notas pessoais de T.I. e certificações
 ├── .editorconfig                   <-- Padrão de formatação de arquivos
 ├── .gitignore                      <-- Regras de exclusão do Git
-├── .gitmodules                     <-- Mapeamento de submódulos Git
 ├── AGENTS.md                       <-- Manual de regras, segurança e identidade do Archimedes 🏛️
 ├── bootstrap.sh                    <-- 🚀 Setup pós-formatação (< 2 min)
 ├── opencode.json                   <-- Configuração de compatibilidade com a OpenCode CLI

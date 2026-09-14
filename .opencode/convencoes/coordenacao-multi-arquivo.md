@@ -12,8 +12,8 @@
 ## 📝 Exemplo de plano
 
 > "Vou criar 3 coisas:
-> 1. Nota nova em `t.i/docker-basico.md`
-> 2. Link em `t.i/README.md` apontando para a nova nota
+> 1. Nota nova em `~/wikisidian/t.i/docker-basico.md`
+> 2. Link em `~/wikisidian/t.i/README.md` apontando para a nova nota
 > 3. Índice com links das notas daquele assunto
 >
 > Confirmo?"

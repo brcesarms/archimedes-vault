@@ -20,9 +20,10 @@ obsidian .  # ou:
 # ou clique com botão direito → "Open with Obsidian"
 ```
 
-### 3. Atualizar Submódulos (se t.i/concurseiro mudarem)
+### 3. Atualizar Estudos Pessoais (se t.i/concurseiro mudarem)
 ```bash
-git submodule update --remote --merge
+cd ~/wikisidian/t.i && git pull
+cd ~/wikisidian/concurseiro && git pull
 ```
 
 ---
@@ -31,8 +32,8 @@ git submodule update --remote --merge
 
 | Pasta | Conteúdo | Para Quem? |
 |-------|----------|------------|
-| `t.i/` | Scripts de TI (Windows, Linux, Proxmox, Obsidian) | TI, infra, sysadmin |
-| `concurseiro/` | Notas de estudo para concursos | Estudos, legislação, informática |
+| `~/wikisidian/t.i/` | Scripts de TI (Windows, Linux, Proxmox, Obsidian) | TI, infra, sysadmin |
+| `~/wikisidian/concurseiro/` | Notas de estudo para concursos | Estudos, legislação, informática |
 | `guia-ia-local/` | Sistema do Archimedes (scripts, runbooks, logs) | IA, automação |
 | `.opencode/skills/` | Skills do Archimedes (ações automatizadas) | IA, automação |
 | `.opencode/convencoes/` | Convenções auxiliares (git, scripts, segurança) | IA, automação |
@@ -55,7 +56,6 @@ git submodule update --remote --merge
 ```bash
 cd ~/archimedes-vault
 git pull origin main
-git submodule update --remote --merge
 ```
 
 ### Criar Backup Manual
@@ -95,14 +95,14 @@ cat ~/archimedes-vault/guia-ia-local/cerebrum/logs/saude-sistema-*.log | tail -2
 | `opencode: command not found` | `source ~/.bashrc` |
 | `Modelo não encontrado` | `usar-qwen3coder` (reinstala o modelo) |
 | `Backup falhou` | Verificar espaço em disco (`df -h`) |
-| `Submódulo quebrado` | `git submodule update --init --recursive` |
+| `~/wikisidian/` não encontrado | `mkdir -p ~/wikisidian && git clone git@github.com:brcesarms/t.i.git ~/wikisidian/t.i && git clone git@github.com:brcesarms/concurseiro.git ~/wikisidian/concurseiro` |
 
 ---
 
 ## 📝 Como Contribuir
 
 ### Adicionar Nova Nota (Estilo Obsidian)
-1. Criar arquivo em `t.i/` ou `concurseiro/`
+1. Criar arquivo em `~/wikisidian/t.i/` ou `~/wikisidian/concurseiro/`
 2. Usar formato: `kebab-case.md` (ex: `ssh-remoto-configuracao.md`)
 3. Adicionar H1 com emoji: `# 🐧 Configuração SSH Remota`
 4. Finalizar com `## 🔗 Fontes`
@@ -153,7 +153,7 @@ cat ~/archimedes-vault/guia-ia-local/cerebrum/logs/saude-sistema-*.log | tail -2
 
 | Tipo | Como |
 |------|------|
-| **Dúvida de uso** | Ver `t.i/` (notas de TI) ou `concurseiro/` (estudos) |
+| **Dúvida de uso** | Ver `~/wikisidian/t.i/` (notas de TI) ou `~/wikisidian/concurseiro/` (estudos) |
 | **Erro no sistema** | Ver `guia-ia-local/cerebrum/logs/` |
 | **Sugestão de melhoria** | Criar issue no GitHub (`brcesarms/archimedes-vault`) |
 

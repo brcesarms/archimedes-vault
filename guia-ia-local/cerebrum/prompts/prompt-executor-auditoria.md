@@ -22,7 +22,7 @@ Você tem permissão total (modo `--auto`). Use as ferramentas **bash** e **Read
 
 ### Etapa 1 — Auditoria (links quebrados, órfãs, MOCs)
 1. Leia `guia-ia-local/cerebrum/rotinas/runbook-auditoria-cofre.md` e siga os 4 passos na ordem.
-2. Escopo: **somente sistema** (raiz + `guia-ia-local/` + `.opencode/`), **excluindo** `t.i/` e `concurseiro/`.
+2. Escopo: **somente sistema** (raiz + `guia-ia-local/` + `.opencode/`). Estudos pessoais (`~/wikisidian/`) estão **fora do repositório** — não auditar.
 3. Filtre falsos positivos (URLs externas, placeholders, notas planejadas).
 4. Escreva/atualize `guia-ia-local/notas/vault-health-report.md` no formato do runbook (✅/❌/🕸️/🗺️ + `## 🔗 Fontes`).
 

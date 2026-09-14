@@ -19,7 +19,7 @@ O GitHub + submódulos **já é o backup lógico** do cofre. Antes de criar snap
 
 ```bash
 git status --short          # mudanças não commitadas?
-git -C t.i status --short   # submódulo também
+git -C ~/wikisidian/t.i status --short   # estudos pessoais também
 ```
 
 > Se houver mudanças, commitar e publicar seguindo [`convencoes-git.md`](../../convencoes/convencoes-git.md). O snapshot abaixo é o backup offline **complementar**.

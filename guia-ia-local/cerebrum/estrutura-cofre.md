@@ -11,7 +11,7 @@ status: ativo
 
 # 🗂️ Estrutura do Archimedes Vault (Sistema Cérebro & Executor)
 
-> Árvore lógica para o sistema. O sistema de automação e inteligência reside em `guia-ia-local/` e `.opencode/`, mantendo a raiz limpa com os submódulos `t.i/` e `concurseiro/`.
+> Árvore lógica para o sistema. O sistema de automação e inteligência reside em `guia-ia-local/` e `.opencode/`, mantendo a raiz limpa. Os estudos pessoais (`t.i/`, `concurseiro/`) ficam **fora do repositório**, em `~/wikisidian/`.
 
 ## 🌳 Árvore de Diretórios
 
@@ -37,8 +37,12 @@ archimedes-vault/
 │   ├── notas/                   # 🗒️ Notas atômicas de manutenção do sistema
 │   ├── perfis/                  # 🖥️ Perfis por máquina
 │   └── dotfiles/                # 🐚 Configurações de terminal
-├── t.i/                         # 📂 Submódulo Git (público)
-└── concurseiro/                 # 📂 Submódulo Git (privado)
+└── README.md                    # 📖 Documentação principal
+
+# Fora do repositório (privado)
+~/wikisidian/
+├── t.i/                         # 📂 ESTUDOS: T.I., redes e certificações
+└── concurseiro/                 # 📂 ESTUDOS: Concursos públicos
 ```
 
 ## 🎭 Quem Lê o Quê

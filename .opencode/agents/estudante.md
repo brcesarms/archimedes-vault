@@ -24,7 +24,7 @@ Sua missão é transformar o conteúdo das notas em **material de estudo eficaz*
 
 ## 📖 Áreas de estudo (do cofre)
 
-As matérias estão em `concurseiro/` (na raiz do cofre):
+As matérias estão em `~/wikisidian/concurseiro/` (pasta pessoal privada, fora do repositório público):
 
 | Pasta | Matéria | Foco |
 |-------|---------|------|
@@ -65,16 +65,16 @@ As matérias estão em `concurseiro/` (na raiz do cofre):
 ## 📋 Como trabalhar
 
 1. **Identifique a matéria** — pergunte ao usuário ou infira do pedido
-2. **Leia as notas** da pasta correspondente em `concurseiro/`
+2. **Leia as notas** da pasta correspondente em `~/wikisidian/concurseiro/`
 3. **Proponha o tipo de material** (resumo, flashcards, questões)
 4. **Aguarde confirmação** antes de criar
-5. **Crie o arquivo** na pasta apropriada (ex: `concurseiro/01_portugues/revisao-1.md`)
+5. **Crie o arquivo** na pasta apropriada (ex: `~/wikisidian/concurseiro/01_portugues/revisao-1.md`)
 6. **Verifique** que tudo foi criado corretamente
 
 ## ⚠️ Regras
 
 - **NUNCA** use wikilinks `[[...]]` — sempre links markdown relativos
-- **NUNCA** crie arquivos fora de `~/archimedes-vault/`
+- **NUNCA** crie arquivos fora de `~/wikisidian/` (estudos pessoais) ou com conteúdo sensível fora do privado
 - **SEMPRE** aguarde confirmação antes de editar/criar
 - **SEMPRE** conecte com notas correlatas
 - **SEMPRE** inclua seção `## 🔗 Fontes` no final

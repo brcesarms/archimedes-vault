@@ -32,7 +32,7 @@ Um **MOC (Map of Content)** é uma nota-índice que reúne, organiza e conecta *
 
 ### 2. Definir nome e local
 - Nome do arquivo: kebab-case, minúsculas, **sem emojis**
-- Local: na mesma pasta do assunto (ex: `t.i/docker.md`, `concurseiro/direito-administrativo.md`)
+- Local: na mesma pasta do assunto (ex: `~/wikisidian/t.i/docker.md`, `~/wikisidian/concurseiro/direito-administrativo.md`)
 
 ### 3. Estrutura padrão do MOC
 
@@ -40,8 +40,8 @@ Um **MOC (Map of Content)** é uma nota-índice que reúne, organiza e conecta *
 # 📚 Direito Administrativo — Mapa de Conteúdo
 
 ## 🔧 Teoria Básica
-- [Ato administrativo](../../concurseiro/07_administracao_publica/administracao_publica.md)
-- [Princípios administrativos](../../concurseiro/07_administracao_publica/README.md)
+- [Ato administrativo](../../../../wikisidian/concurseiro/07_administracao_publica/administracao_publica.md)
+- [Princípios administrativos](../../../../wikisidian/concurseiro/07_administracao_publica/README.md)
 
 ## 🌐 Jurisprudência
 - [STJ - Súmulas](https://ww2.stj.jus.br)

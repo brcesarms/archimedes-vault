@@ -10,7 +10,7 @@
 #   - v1.0.0 (2026-08-01): Versão inicial
 # @usage:
 #   ./verificar-links-parado.sh caminho/arquivo.md
-#   ./verificar-links-parado.sh t.i/linux/README.md
+#   ./verificar-links-parado.sh ~/wikisidian/t.i/linux/README.md
 # @security:
 #   - Usa variáveis de ambiente (arquivo, dir, base)
 #   - Limita verificações a 50 links para evitar travamento
@@ -19,7 +19,7 @@ set -euo pipefail
 
 if [ -z "$1" ]; then
   echo "❌ Uso: $0 <arquivo.md>"
-  echo "📝 Exemplo: $0 t.i/linux/README.md"
+  echo "📝 Exemplo: $0 ~/wikisidian/t.i/linux/README.md"
   exit 1
 fi
 

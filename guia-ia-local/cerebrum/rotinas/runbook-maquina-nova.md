@@ -71,7 +71,7 @@ cd ~/archimedes-vault && ./bootstrap.sh
 | Check | Comando | Esperado |
 | :--- | :--- | :--- |
 | Cofre íntegro | `ls ~/archimedes-vault && git -C ~/archimedes-vault status` | Árvore + clean |
-| Submódulos | `git -C ~/archimedes-vault submodule status` | `t.i` e `concurseiro` OK |
+| Estudos pessoais (opcional) | `ls ~/wikisidian && git -C ~/wikisidian/t.i status` | `t.i` e `concurseiro` OK |
 | OpenCode | `opencode --version` ou `agy` | Versão listada |
 | SSH remoto | `ssh laptop-brn 'echo ok'` | `ok` |
 | Chat | `cd ~/archimedes-vault && agy` | 🏛️ Archimedes online |

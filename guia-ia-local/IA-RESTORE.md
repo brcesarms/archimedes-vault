@@ -79,7 +79,8 @@ source ~/.bashrc  # ou source ~/.zshrc, etc.
 **Verificação:**
 ```bash
 cd ~/archimedes-vault
-ls -la  # deve ver AGENTS.md, t.i/, concurseiro/, guia-ia-local/
+ls -la  # deve ver AGENTS.md, guia-ia-local/, README.md
+ls ~/wikisidian  # estudos pessoais (t.i/ e concurseiro/) fora do repositório público
 ```
 
 ---

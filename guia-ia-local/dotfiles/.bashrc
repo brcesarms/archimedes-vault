@@ -57,10 +57,11 @@ cofre() {
 # Ver status do cofre
 cofre-status() {
     local target="${COFRE_DIR:-$HOME/archimedes-vault}"
+    local wiki="$HOME/wikisidian"
     echo "🏛️ Status do Archimedes Vault:"
     echo "  📁 Arquivos Markdown: $(find "$target" -name "*.md" 2>/dev/null | wc -l)"
-    echo "  📚 Concurseiro: $(find "$target/concurseiro" -name "*.md" 2>/dev/null | wc -l)"
-    echo "  💻 T.I.: $(find "$target/t.i" -name "*.md" 2>/dev/null | wc -l)"
+    echo "  📚 Concurseiro (wikisidian): $(find "$wiki/concurseiro" -name "*.md" 2>/dev/null | wc -l)"
+    echo "  💻 T.I. (wikisidian): $(find "$wiki/t.i" -name "*.md" 2>/dev/null | wc -l)"
     echo "  🗒️  Skills: $(find "$target/.opencode/skills" -name "SKILL.md" 2>/dev/null | wc -l)"
 }
 

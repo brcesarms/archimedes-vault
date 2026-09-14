@@ -221,14 +221,12 @@ fi
 log "5/5" "Validando o cofre..."
 FAIL=0
 
-# Submódulos
+# Estudos pessoais (fora do repositório público — opcionais para o restore)
 for mod in t.i concurseiro; do
-    # ⚠️ .git em submódulo é ARQUIVO pointer (não diretório) — use -e, não -d
-    if [ -e "${COFRE_DIR}/${mod}/.git" ]; then
-        success "Submódulo $mod OK"
+    if [ -d "${HOME}/wikisidian/${mod}/.git" ]; then
+        success "Estudos pessoais: wikisidian/$mod OK"
     else
-        warn "Submódulo $mod ausente — rode: git submodule update --init --recursive"
-        FAIL=1
+        warn "Estudos pessoais: wikisidian/$mod ausente (opcional) — clone em ~/wikisidian: git clone git@github.com:brcesarms/$mod.git"
     fi
 done
 

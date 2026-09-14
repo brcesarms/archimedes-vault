@@ -14,7 +14,7 @@ MOCs (Maps of Content) são notas de índice que organizam e conectam notas tem�
 **Notas:** 24  
 
 #### 📁 Notas a incluir:
-- Tudo em `concurseiro/`
+- Tudo em `~/wikisidian/concurseiro/`
 - Notas marcadas com `#concurso`
 
 #### 🧭 Estrutura sugerida:
@@ -43,7 +43,7 @@ MOCs (Maps of Content) são notas de índice que organizam e conectam notas tem�
 
 #### 📁 Notas a incluir:
 - Notas marcadas com `#dart`
-- Dart/Flutter no `t.i/`
+- Dart/Flutter no `~/wikisidian/t.i/`
 
 #### 🧭 Estrutura sugerida:
 ```
@@ -67,7 +67,7 @@ MOCs (Maps of Content) são notas de índice que organizam e conectam notas tem�
 **Notas:** 10
 
 #### 📁 Notas a incluir:
-- Notas em `concurseiro/01_portugues/`
+- Notas em `~/wikisidian/concurseiro/01_portugues/`
 - Notas marcadas com `#portugues`
 
 #### 🧭 Estrutura sugerida:

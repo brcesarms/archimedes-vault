@@ -17,41 +17,40 @@ test: adiciona nota de validação
 
 ## 🏗️ Estrutura modular (IMPORTANTE!)
 
-O cofre é **modular** — 3 repos separados:
+O projeto é **modular** — 3 repos separados:
 
 | Caminho | Repo | Acesso |
 |---------|------|--------|
-| `~/archimedes-vault` (raiz) | `brcesarms/archimedes-vault` | 🔒 privado |
-| `~/archimedes-vault/t.i` (submódulo) | `brcesarms/t.i` | 🌐 público |
-| `~/archimedes-vault/concurseiro` (submódulo) | `brcesarms/concurseiro` | 🔒 privado |
+| `~/archimedes-vault` (raiz) | `brcesarms/archimedes-vault` | 🌐 público |
+| `~/wikisidian/t.i` (estudos pessoais) | `brcesarms/t.i` | 🌐 público |
+| `~/wikisidian/concurseiro` (estudos pessoais) | `brcesarms/concurseiro` | 🔒 privado |
 
-**Regra de ouro:** conteúdo de estudo commita **DENTRO do submódulo**; sistema (scripts/notas/utils de manutenção) commita **na raiz**.
+**Regra de ouro:** conteúdo de estudo commita **DENTRO de `~/wikisidian/`**; sistema (scripts/notas/utils de manutenção) commita **na raiz do cofre**. Estudos pessoais ficam **fora do repositório público**.
 
-## 🔀 Submódulos
+## 🔀 Estudos Pessoais (`~/wikisidian/`)
 
-### Clonar tudo (pós-formatação / máquina nova)
+### Clonar estudos pessoais (pós-formatação / máquina nova)
 ```bash
-git clone --recurse-submodules https://github.com/brcesarms/archimedes-vault.git ~/archimedes-vault
+mkdir -p ~/wikisidian
+git clone https://github.com/brcesarms/t.i.git ~/wikisidian/t.i
+git clone https://github.com/brcesarms/concurseiro.git ~/wikisidian/concurseiro
 ```
 
-### Atualizar submódulos para o último commit remoto
+### Atualizar estudos pessoais para o último commit remoto
 ```bash
-git submodule update --remote --merge
+git -C ~/wikisidian/t.i pull
+git -C ~/wikisidian/concurseiro pull
 ```
 
-### Commitar mudanças DENTRO de um submódulo (ex: t.i)
+### Commitar mudanças DENTRO de um estudo pessoal (ex: t.i)
 ```bash
-cd t.i
+cd ~/wikisidian/t.i
 git add .
 git commit -m "feat: nova nota de linux"
 git push
-cd ..
-git add t.i
-git commit -m "chore: atualiza ponteiro do submódulo t.i"
-git push
 ```
 
-> ⚠️ **Depois de commitar dentro de um submódulo, SEMPRE atualize o ponteiro na raiz** (o `git add t.i` + commit na raiz), senão o repo principal fica apontando para um commit antigo.
+> ⚠️ Os estudos pessoais são **repos independentes** de `~/archimedes-vault` — não existe mais ponteiro de submódulo para atualizar na raiz.
 
 ## 🐙 API GitHub (via curl)
 
@@ -104,8 +103,8 @@ curl -s -u "brcesarms:${GITHUB_TOKEN}" https://api.github.com/user
 1. [ ] `git status` — vejo o que vai entrar
 2. [ ] Nenhum arquivo sensível (`.env`, `*.key`, token)
 3. [ ] Mensagem convencional em pt-BR
-4. [ ] Se mudou conteúdo de t.i/concurseiro → commit no submódulo + ponteiro na raiz
-5. [ ] `git push` no repo certo (raiz vs submódulo)
+4. [ ] Se mudou conteúdo de t.i/concurseiro → commit em `~/wikisidian/` (repo próprio, fora do vault)
+5. [ ] `git push` no repo certo (raiz vs estudos pessoais)
 
 ---
 

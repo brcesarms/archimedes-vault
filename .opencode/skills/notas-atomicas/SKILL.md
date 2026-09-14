@@ -14,8 +14,8 @@ Este cofre segue regras de escrita de notas. Ao criar ou editar qualquer nota, s
 ## 📍 Onde salvar cada nota
 
 - **Manutenção do sistema** (lições, manutenção, propostas, health report) → `guia-ia-local/notas/`
-- **Estudos de TI** → `t.i/` (submódulo, repo brcesarms/t.i)
-- **Concursos** → `concurseiro/` (submódulo, repo brcesarms/concurseiro)
+- **Estudos de TI** → `~/wikisidian/t.i/` (pasta pessoal, repo brcesarms/t.i)
+- **Concursos** → `~/wikisidian/concurseiro/` (pasta pessoal, repo brcesarms/concurseiro)
 - ⚠️ Sempre coloque a nota no lugar certo — sistema ≠ conteúdo
 
 ## ⚛️ Princípio da Nota Atômica

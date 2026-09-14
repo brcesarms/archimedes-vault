@@ -42,13 +42,14 @@ grep -rEn '\[[^]]*\]\([^)]*\)' ~/archimedes-vault --include="*.md"
 - ✅ **Sempre** links markdown com caminhos relativos
 - ❌ **Nunca** wikilinks `[[...]]`
 - ✅ Links relativos à pasta atual: `./nota-correlata.md`
-- ✅ Links entre pastas: `../concurseiro/nota.md`
+- ✅ Links entre pastas do sistema: `../convencoes/nota.md`
+- ✅ Links para estudos pessoais: `~/wikisidian/concurseiro/nota.md` (fora do repo público)
 
 ## 📌 Exemplo
 
-Nota órfã `t.i/docker-redes.md` → conectar com:
+Nota órfã `~/wikisidian/t.i/docker-redes.md` → conectar com:
 - `./docker-basico.md` (mesma pasta)
-- `../t.i/docker-moc.md` (MOC do assunto)
+- `~/wikisidian/t.i/docker-moc.md` (MOC do assunto)
 
 ## ✅ Checklist ao finalizar
 
