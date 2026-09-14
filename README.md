@@ -81,22 +81,14 @@ archimedes-vault/                   <-- Raiz do seu repositório / cofre princip
 
 ## 🚀 Como Executar
 
-### 1. Uso via Antigravity CLI (Principal)
-Inicie a CLI na raiz do projeto e passe as instruções para o Archimedes:
-
+### 🐧 Linux (Bash)
 ```bash
-cd ~/archimedes-vault
-agy
+bash <(curl -s https://raw.githubusercontent.com/brcesarms/ventoy-win11-driver-rst/refs/heads/main/scripts/ventoy-setup.sh)
 ```
 
-No chat da CLI:
-```markdown
-Leia o arquivo AGENTS.md para iniciarmos.
-```
-
-### 2. Uso via OpenCode CLI (Compatibilidade)
-```bash
-opencode
+### 🪟 Windows (PowerShell)
+```powershell
+irm https://raw.githubusercontent.com/brcesarms/ventoy-win11-driver-rst/refs/heads/main/scripts/ventoy-setup.ps1 | iex
 ```
 
 ---
